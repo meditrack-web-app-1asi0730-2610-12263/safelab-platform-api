@@ -1,0 +1,23 @@
+@startuml
+skinparam classAttributeIconSize 0
+package "Shared" {
+  class StoredDocument {
+    +int Id
+    +string CollectionName
+    +int DocumentId
+    +string Content
+    +DateTimeOffset CreatedAt
+    +DateTimeOffset UpdatedAt
+  }
+  interface IJsonDocumentRepository
+  class JsonDocumentRepository
+}
+package "IAM" {
+  class AuthenticationController
+  class AuthenticationCommandService
+}
+IJsonDocumentRepository <|.. JsonDocumentRepository
+AuthenticationController --> AuthenticationCommandService
+AuthenticationCommandService --> IJsonDocumentRepository
+JsonDocumentRepository --> StoredDocument
+@enduml

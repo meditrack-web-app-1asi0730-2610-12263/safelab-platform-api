@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SafeLab.Platform", "SafeLab.Platform\SafeLab.Platform.csproj", "{5A8E107E-383C-40D3-82FF-6E52206A9921}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A8E107E-383C-40D3-82FF-6E52206A9921}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A8E107E-383C-40D3-82FF-6E52206A9921}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A8E107E-383C-40D3-82FF-6E52206A9921}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A8E107E-383C-40D3-82FF-6E52206A9921}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {939E0F2C-7F2E-4176-B5E6-C31A61F4EDC3}
+	EndGlobalSection
+EndGlobal

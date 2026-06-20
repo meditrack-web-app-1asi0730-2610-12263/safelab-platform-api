@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: safelab-platform-api
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true
+    envVars:
+      - key: ASPNETCORE_ENVIRONMENT
+        value: Production
+      - key: MYSQL_CONNECTION_STRING
+        sync: false

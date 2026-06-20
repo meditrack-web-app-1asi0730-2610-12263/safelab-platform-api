@@ -1,0 +1,3311 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "email": "admin@safelab.com",
+      "password": "admin123",
+      "firstName": "Maria",
+      "lastName": "Lopez",
+      "fullName": "Dr. Maria Lopez",
+      "initials": "ML",
+      "phone": "+51 901 555 101",
+      "role": "safeLabAdministrator",
+      "position": "SafeLab Administrator",
+      "status": "active",
+      "segment": "platform",
+      "organization": "SafeLab Central",
+      "laboratory": "SafeLab Platform",
+      "facilityId": "FAC-PLATFORM",
+      "facilityName": "SafeLab Platform",
+      "timezone": "America/Lima",
+      "allowedContexts": [
+        "dashboard-overview",
+        "asset-inventory",
+        "sensor-monitoring",
+        "environmental-compliance",
+        "alerts-notifications",
+        "remote-control",
+        "reports-analytics",
+        "incident-management",
+        "audit-traceability",
+        "subscription-billing"
+      ],
+      "createdAt": "2026-06-19T09:00:00.000Z",
+      "updatedAt": "2026-06-19T09:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "username": "admin.ops",
+      "email": "admin.ops@safelab.com",
+      "password": "admin123",
+      "firstName": "Jorge",
+      "lastName": "Alvarez",
+      "fullName": "Jorge Alvarez",
+      "initials": "JA",
+      "phone": "+51 902 555 102",
+      "role": "safeLabAdministrator",
+      "position": "SafeLab Administrator",
+      "status": "active",
+      "segment": "platform",
+      "organization": "SafeLab Central",
+      "laboratory": "SafeLab Platform",
+      "facilityId": "FAC-PLATFORM",
+      "facilityName": "SafeLab Platform",
+      "timezone": "America/Lima",
+      "allowedContexts": [
+        "dashboard-overview",
+        "asset-inventory",
+        "sensor-monitoring",
+        "environmental-compliance",
+        "alerts-notifications",
+        "remote-control",
+        "reports-analytics",
+        "incident-management",
+        "audit-traceability",
+        "subscription-billing"
+      ],
+      "createdAt": "2026-06-19T09:00:00.000Z",
+      "updatedAt": "2026-06-19T09:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "username": "admin.audit",
+      "email": "admin.audit@safelab.com",
+      "password": "admin123",
+      "firstName": "Valeria",
+      "lastName": "Santos",
+      "fullName": "Valeria Santos",
+      "initials": "VS",
+      "phone": "+51 903 555 103",
+      "role": "safeLabAdministrator",
+      "position": "SafeLab Administrator",
+      "status": "active",
+      "segment": "platform",
+      "organization": "SafeLab Central",
+      "laboratory": "SafeLab Platform",
+      "facilityId": "FAC-PLATFORM",
+      "facilityName": "SafeLab Platform",
+      "timezone": "America/Lima",
+      "allowedContexts": [
+        "dashboard-overview",
+        "asset-inventory",
+        "sensor-monitoring",
+        "environmental-compliance",
+        "alerts-notifications",
+        "remote-control",
+        "reports-analytics",
+        "incident-management",
+        "audit-traceability",
+        "subscription-billing"
+      ],
+      "createdAt": "2026-06-19T09:00:00.000Z",
+      "updatedAt": "2026-06-19T09:00:00.000Z"
+    },
+    {
+      "id": 4,
+      "username": "coordinator",
+      "email": "coordinator@safelab.com",
+      "password": "demo123",
+      "firstName": "Carlos",
+      "lastName": "Mendoza",
+      "fullName": "Carlos Mendoza",
+      "initials": "CM",
+      "phone": "+51 904 555 104",
+      "role": "bioclinicalCoordinator",
+      "position": "Bioclinical Operations Coordinator",
+      "status": "active",
+      "segment": "clinical-laboratory",
+      "organization": "Andes Clinical Network",
+      "laboratory": "Central Clinical Laboratory",
+      "facilityId": "FAC-CLN-001",
+      "facilityName": "Central Clinical Laboratory",
+      "timezone": "America/Lima",
+      "allowedContexts": [
+        "dashboard-overview",
+        "asset-inventory",
+        "sensor-monitoring",
+        "environmental-compliance",
+        "alerts-notifications",
+        "reports-analytics",
+        "incident-management",
+        "audit-traceability"
+      ],
+      "createdAt": "2026-06-19T09:00:00.000Z",
+      "updatedAt": "2026-06-19T09:00:00.000Z"
+    },
+    {
+      "id": 5,
+      "username": "coordinator.north",
+      "email": "coordinator.north@safelab.com",
+      "password": "demo123",
+      "firstName": "Patricia",
+      "lastName": "Rivas",
+      "fullName": "Patricia Rivas",
+      "initials": "PR",
+      "phone": "+51 905 555 105",
+      "role": "bioclinicalCoordinator",
+      "position": "Bioclinical Operations Coordinator",
+      "status": "active",
+      "segment": "clinical-laboratory",
+      "organization": "North Province Health Center",
+      "laboratory": "North Province Clinical Lab",
+      "facilityId": "FAC-CLN-002",
+      "facilityName": "North Province Clinical Lab",
+      "timezone": "America/Lima",
+      "allowedContexts": [
+        "dashboard-overview",
+        "asset-inventory",
+        "sensor-monitoring",
+        "environmental-compliance",
+        "alerts-notifications",
+        "reports-analytics",
+        "incident-management",
+        "audit-traceability"
+      ],
+      "createdAt": "2026-06-19T09:00:00.000Z",
+      "updatedAt": "2026-06-19T09:00:00.000Z"
+    },
+    {
+      "id": 6,
+      "username": "pharmacy.coordinator",
+      "email": "pharmacy.coordinator@safelab.com",
+      "password": "demo123",
+      "firstName": "Rosa",
+      "lastName": "Fernandez",
+      "fullName": "Rosa Fernandez",
+      "initials": "RF",
+      "phone": "+51 906 555 106",
+      "role": "hospitalPharmacyCoordinator",
+      "position": "Hospital Pharmacy Coordinator",
+      "status": "active",
+      "segment": "hospital-pharmacy",
+      "organization": "San Gabriel Hospital",
+      "laboratory": "San Gabriel Hospital Pharmacy",
+      "facilityId": "FAC-PHM-001",
+      "facilityName": "San Gabriel Hospital Pharmacy",
+      "timezone": "America/Lima",
+      "allowedContexts": [
+        "dashboard-overview",
+        "asset-inventory",
+        "sensor-monitoring",
+        "environmental-compliance",
+        "alerts-notifications",
+        "reports-analytics",
+        "incident-management",
+        "audit-traceability"
+      ],
+      "createdAt": "2026-06-19T09:00:00.000Z",
+      "updatedAt": "2026-06-19T09:00:00.000Z"
+    },
+    {
+      "id": 7,
+      "username": "lab.tech1",
+      "email": "lab.tech1@safelab.com",
+      "password": "demo123",
+      "firstName": "Luis",
+      "lastName": "Herrera",
+      "fullName": "Luis Herrera",
+      "initials": "LH",
+      "phone": "+51 907 555 107",
+      "role": "labTechnician",
+      "position": "Laboratory Technician",
+      "status": "active",
+      "segment": "clinical-laboratory",
+      "organization": "Andes Clinical Network",
+      "laboratory": "Central Clinical Laboratory",
+      "facilityId": "FAC-CLN-001",
+      "facilityName": "Central Clinical Laboratory",
+      "timezone": "America/Lima",
+      "allowedContexts": [
+        "dashboard-overview",
+        "asset-inventory",
+        "sensor-monitoring",
+        "alerts-notifications",
+        "incident-management"
+      ],
+      "createdAt": "2026-06-19T09:00:00.000Z",
+      "updatedAt": "2026-06-19T09:00:00.000Z"
+    },
+    {
+      "id": 8,
+      "username": "lab.tech2",
+      "email": "lab.tech2@safelab.com",
+      "password": "demo123",
+      "firstName": "Diego",
+      "lastName": "Quispe",
+      "fullName": "Diego Quispe",
+      "initials": "DQ",
+      "phone": "+51 908 555 108",
+      "role": "labTechnician",
+      "position": "Laboratory Technician",
+      "status": "active",
+      "segment": "clinical-laboratory",
+      "organization": "Andes Clinical Network",
+      "laboratory": "Central Clinical Laboratory",
+      "facilityId": "FAC-CLN-001",
+      "facilityName": "Central Clinical Laboratory",
+      "timezone": "America/Lima",
+      "allowedContexts": [
+        "dashboard-overview",
+        "asset-inventory",
+        "sensor-monitoring",
+        "alerts-notifications",
+        "incident-management"
+      ],
+      "createdAt": "2026-06-19T09:00:00.000Z",
+      "updatedAt": "2026-06-19T09:00:00.000Z"
+    },
+    {
+      "id": 9,
+      "username": "lab.tech3",
+      "email": "lab.tech3@safelab.com",
+      "password": "demo123",
+      "firstName": "Sofia",
+      "lastName": "Vega",
+      "fullName": "Sofia Vega",
+      "initials": "SV",
+      "phone": "+51 909 555 109",
+      "role": "labTechnician",
+      "position": "Laboratory Technician",
+      "status": "active",
+      "segment": "clinical-laboratory",
+      "organization": "North Province Health Center",
+      "laboratory": "North Province Clinical Lab",
+      "facilityId": "FAC-CLN-002",
+      "facilityName": "North Province Clinical Lab",
+      "timezone": "America/Lima",
+      "allowedContexts": [
+        "dashboard-overview",
+        "asset-inventory",
+        "sensor-monitoring",
+        "alerts-notifications",
+        "incident-management"
+      ],
+      "createdAt": "2026-06-19T09:00:00.000Z",
+      "updatedAt": "2026-06-19T09:00:00.000Z"
+    },
+    {
+      "id": 10,
+      "username": "pharm.tech1",
+      "email": "pharm.tech1@safelab.com",
+      "password": "demo123",
+      "firstName": "Ana",
+      "lastName": "Torres",
+      "fullName": "Ana Torres",
+      "initials": "AT",
+      "phone": "+51 910 555 110",
+      "role": "pharmacyTechnician",
+      "position": "Pharmacy Technician",
+      "status": "active",
+      "segment": "hospital-pharmacy",
+      "organization": "San Gabriel Hospital",
+      "laboratory": "San Gabriel Hospital Pharmacy",
+      "facilityId": "FAC-PHM-001",
+      "facilityName": "San Gabriel Hospital Pharmacy",
+      "timezone": "America/Lima",
+      "allowedContexts": [
+        "dashboard-overview",
+        "asset-inventory",
+        "sensor-monitoring",
+        "alerts-notifications",
+        "incident-management"
+      ],
+      "createdAt": "2026-06-19T09:00:00.000Z",
+      "updatedAt": "2026-06-19T09:00:00.000Z"
+    },
+    {
+      "id": 11,
+      "username": "pharm.tech2",
+      "email": "pharm.tech2@safelab.com",
+      "password": "demo123",
+      "firstName": "Marco",
+      "lastName": "Salazar",
+      "fullName": "Marco Salazar",
+      "initials": "MS",
+      "phone": "+51 911 555 111",
+      "role": "pharmacyTechnician",
+      "position": "Pharmacy Technician",
+      "status": "active",
+      "segment": "hospital-pharmacy",
+      "organization": "San Gabriel Hospital",
+      "laboratory": "San Gabriel Hospital Pharmacy",
+      "facilityId": "FAC-PHM-001",
+      "facilityName": "San Gabriel Hospital Pharmacy",
+      "timezone": "America/Lima",
+      "allowedContexts": [
+        "dashboard-overview",
+        "asset-inventory",
+        "sensor-monitoring",
+        "alerts-notifications",
+        "incident-management"
+      ],
+      "createdAt": "2026-06-19T09:00:00.000Z",
+      "updatedAt": "2026-06-19T09:00:00.000Z"
+    },
+    {
+      "id": 12,
+      "username": "compliance.central",
+      "email": "compliance@safelab.com",
+      "password": "demo123",
+      "firstName": "Elena",
+      "lastName": "Castillo",
+      "fullName": "Elena Castillo",
+      "initials": "EC",
+      "phone": "+51 912 555 112",
+      "role": "complianceOfficer",
+      "position": "Compliance Officer",
+      "status": "active",
+      "segment": "clinical-laboratory",
+      "organization": "Andes Clinical Network",
+      "laboratory": "Central Clinical Laboratory",
+      "facilityId": "FAC-CLN-001",
+      "facilityName": "Central Clinical Laboratory",
+      "timezone": "America/Lima",
+      "allowedContexts": [
+        "dashboard-overview",
+        "environmental-compliance",
+        "alerts-notifications",
+        "reports-analytics",
+        "incident-management",
+        "audit-traceability"
+      ],
+      "createdAt": "2026-06-19T09:00:00.000Z",
+      "updatedAt": "2026-06-19T09:00:00.000Z"
+    },
+    {
+      "id": 13,
+      "username": "compliance.pharma",
+      "email": "compliance.pharma@safelab.com",
+      "password": "demo123",
+      "firstName": "Gabriel",
+      "lastName": "Paredes",
+      "fullName": "Gabriel Paredes",
+      "initials": "GP",
+      "phone": "+51 913 555 113",
+      "role": "complianceOfficer",
+      "position": "Compliance Officer",
+      "status": "active",
+      "segment": "hospital-pharmacy",
+      "organization": "San Gabriel Hospital",
+      "laboratory": "San Gabriel Hospital Pharmacy",
+      "facilityId": "FAC-PHM-001",
+      "facilityName": "San Gabriel Hospital Pharmacy",
+      "timezone": "America/Lima",
+      "allowedContexts": [
+        "dashboard-overview",
+        "environmental-compliance",
+        "alerts-notifications",
+        "reports-analytics",
+        "incident-management",
+        "audit-traceability"
+      ],
+      "createdAt": "2026-06-19T09:00:00.000Z",
+      "updatedAt": "2026-06-19T09:00:00.000Z"
+    },
+    {
+      "id": 14,
+      "username": "maintenance",
+      "email": "maintenance@safelab.com",
+      "password": "demo123",
+      "firstName": "Miguel",
+      "lastName": "Rojas",
+      "fullName": "Miguel Rojas",
+      "initials": "MR",
+      "phone": "+51 914 555 114",
+      "role": "maintenanceOperator",
+      "position": "Maintenance Operator",
+      "status": "active",
+      "segment": "clinical-laboratory",
+      "organization": "Andes Clinical Network",
+      "laboratory": "Central Clinical Laboratory",
+      "facilityId": "FAC-CLN-001",
+      "facilityName": "Central Clinical Laboratory",
+      "timezone": "America/Lima",
+      "allowedContexts": [
+        "dashboard-overview",
+        "sensor-monitoring",
+        "alerts-notifications",
+        "remote-control",
+        "incident-management"
+      ],
+      "createdAt": "2026-06-19T09:00:00.000Z",
+      "updatedAt": "2026-06-19T09:00:00.000Z"
+    },
+    {
+      "id": 15,
+      "username": "maintenance.pharma",
+      "email": "maintenance.pharma@safelab.com",
+      "password": "demo123",
+      "firstName": "Paola",
+      "lastName": "Campos",
+      "fullName": "Paola Campos",
+      "initials": "PC",
+      "phone": "+51 915 555 115",
+      "role": "maintenanceOperator",
+      "position": "Maintenance Operator",
+      "status": "active",
+      "segment": "hospital-pharmacy",
+      "organization": "San Gabriel Hospital",
+      "laboratory": "San Gabriel Hospital Pharmacy",
+      "facilityId": "FAC-PHM-001",
+      "facilityName": "San Gabriel Hospital Pharmacy",
+      "timezone": "America/Lima",
+      "allowedContexts": [
+        "dashboard-overview",
+        "sensor-monitoring",
+        "alerts-notifications",
+        "remote-control",
+        "incident-management"
+      ],
+      "createdAt": "2026-06-19T09:00:00.000Z",
+      "updatedAt": "2026-06-19T09:00:00.000Z"
+    },
+    {
+      "id": 16,
+      "username": "billing",
+      "email": "billing@safelab.com",
+      "password": "demo123",
+      "firstName": "Lucia",
+      "lastName": "Ramirez",
+      "fullName": "Lucia Ramirez",
+      "initials": "LR",
+      "phone": "+51 916 555 116",
+      "role": "billingManager",
+      "position": "Billing Manager",
+      "status": "active",
+      "segment": "shared",
+      "organization": "Andes Clinical Network",
+      "laboratory": "Central Clinical Laboratory",
+      "facilityId": "FAC-CLN-001",
+      "facilityName": "Central Clinical Laboratory",
+      "timezone": "America/Lima",
+      "allowedContexts": [
+        "dashboard-overview",
+        "subscription-billing",
+        "reports-analytics"
+      ],
+      "createdAt": "2026-06-19T09:00:00.000Z",
+      "updatedAt": "2026-06-19T09:00:00.000Z"
+    }
+  ],
+  "billingPlans": [
+    {
+      "id": 1,
+      "name": "Basic Monitoring",
+      "description": "For small laboratories starting with monitored storage.",
+      "monthlyCost": 49,
+      "deviceLimit": 15,
+      "sensorsLimit": 25,
+      "reportsLimit": 10,
+      "alertsLimit": 50
+    },
+    {
+      "id": 2,
+      "name": "Professional Monitoring",
+      "description": "For laboratories that require compliance tracking and analytics.",
+      "monthlyCost": 99,
+      "deviceLimit": 35,
+      "sensorsLimit": 75,
+      "reportsLimit": 35,
+      "alertsLimit": 150
+    },
+    {
+      "id": 3,
+      "name": "Enterprise Monitoring",
+      "description": "For organizations with multiple locations and advanced monitoring.",
+      "monthlyCost": 199,
+      "deviceLimit": 100,
+      "sensorsLimit": 250,
+      "reportsLimit": 100,
+      "alertsLimit": 500
+    }
+  ],
+  "userSubscriptions": [
+    {
+      "id": 1,
+      "userId": 4,
+      "facilityId": "FAC-CLN-001",
+      "planId": 2,
+      "planName": "Professional Monitoring",
+      "status": "active",
+      "monthlyCost": 99,
+      "billingCycle": "monthly",
+      "paymentStatus": "paid",
+      "startedAt": "2026-06-01T00:00:00.000Z",
+      "renewalDate": "2026-07-01"
+    },
+    {
+      "id": 2,
+      "userId": 5,
+      "facilityId": "FAC-CLN-002",
+      "planId": 1,
+      "planName": "Basic Monitoring",
+      "status": "active",
+      "monthlyCost": 49,
+      "billingCycle": "monthly",
+      "paymentStatus": "paid",
+      "startedAt": "2026-06-01T00:00:00.000Z",
+      "renewalDate": "2026-07-01"
+    },
+    {
+      "id": 3,
+      "userId": 6,
+      "facilityId": "FAC-PHM-001",
+      "planId": 2,
+      "planName": "Professional Monitoring",
+      "status": "active",
+      "monthlyCost": 99,
+      "billingCycle": "monthly",
+      "paymentStatus": "paid",
+      "startedAt": "2026-06-01T00:00:00.000Z",
+      "renewalDate": "2026-07-01"
+    }
+  ],
+  "currentUser": {
+    "id": 1,
+    "username": "admin",
+    "email": "admin@safelab.com",
+    "password": "admin123",
+    "firstName": "Maria",
+    "lastName": "Lopez",
+    "fullName": "Dr. Maria Lopez",
+    "initials": "ML",
+    "phone": "+51 901 555 101",
+    "role": "safeLabAdministrator",
+    "position": "SafeLab Administrator",
+    "status": "active",
+    "segment": "platform",
+    "organization": "SafeLab Central",
+    "laboratory": "SafeLab Platform",
+    "facilityId": "FAC-PLATFORM",
+    "facilityName": "SafeLab Platform",
+    "timezone": "America/Lima",
+    "allowedContexts": [
+      "dashboard-overview",
+      "asset-inventory",
+      "sensor-monitoring",
+      "environmental-compliance",
+      "alerts-notifications",
+      "remote-control",
+      "reports-analytics",
+      "incident-management",
+      "audit-traceability",
+      "subscription-billing"
+    ],
+    "createdAt": "2026-06-19T09:00:00.000Z",
+    "updatedAt": "2026-06-19T09:00:00.000Z"
+  },
+  "boundedContexts": [
+    {
+      "id": 1,
+      "slug": "identity-access",
+      "name": "Identity & Access",
+      "status": "in-development"
+    },
+    {
+      "id": 2,
+      "slug": "user-profiles",
+      "name": "User Profiles",
+      "status": "in-development"
+    },
+    {
+      "id": 3,
+      "slug": "subscription-billing",
+      "name": "Plans & Billing",
+      "status": "in-development"
+    },
+    {
+      "id": 4,
+      "slug": "dashboard-overview",
+      "name": "Dashboard & Overview",
+      "status": "in-development"
+    },
+    {
+      "id": 5,
+      "slug": "asset-inventory",
+      "name": "Asset & Inventory",
+      "status": "in-development"
+    },
+    {
+      "id": 6,
+      "slug": "sensor-monitoring",
+      "name": "Sensor Monitoring",
+      "status": "in-development"
+    },
+    {
+      "id": 7,
+      "slug": "environmental-compliance",
+      "name": "Environmental Compliance",
+      "status": "in-development"
+    },
+    {
+      "id": 8,
+      "slug": "alerts-notifications",
+      "name": "Alerts & Notifications",
+      "status": "in-development"
+    },
+    {
+      "id": 9,
+      "slug": "remote-control",
+      "name": "Remote Control",
+      "status": "in-development"
+    },
+    {
+      "id": 10,
+      "slug": "reports-analytics",
+      "name": "Reports & Analytics",
+      "status": "in-development"
+    },
+    {
+      "id": 11,
+      "slug": "incident-management",
+      "name": "Incident Management",
+      "status": "in-development"
+    },
+    {
+      "id": 12,
+      "slug": "audit-traceability",
+      "name": "Audit & Traceability",
+      "status": "in-development"
+    }
+  ],
+  "alerts": [
+    {
+      "id": 1,
+      "type": "Temperature",
+      "title": "Freezer out of range",
+      "description": "PCR freezer exceeded maximum temperature.",
+      "severity": "critical",
+      "status": "active",
+      "deviceId": "SEN-CLN-003",
+      "deviceName": "PCR Freezer Temperature",
+      "location": "Central Lab - PCR Room",
+      "assignedTo": "Carlos Mendoza",
+      "createdAt": "2026-06-19T03:10:00.000Z",
+      "acknowledgedAt": null,
+      "resolvedAt": null,
+      "ownerUserId": 4,
+      "ownerName": "Carlos Mendoza",
+      "assignedUserIds": [
+        7,
+        14
+      ],
+      "facilityId": "FAC-CLN-001",
+      "facilityName": "Central Clinical Laboratory",
+      "segment": "clinical-laboratory",
+      "organization": "Andes Clinical Network"
+    },
+    {
+      "id": 2,
+      "type": "Humidity",
+      "title": "Humidity deviation",
+      "description": "Insulin storage humidity is above the safe range.",
+      "severity": "warning",
+      "status": "active",
+      "deviceId": "SEN-PHM-002",
+      "deviceName": "Insulin Storage Humidity",
+      "location": "Hospital Pharmacy - Insulin",
+      "assignedTo": "Rosa Fernandez",
+      "createdAt": "2026-06-19T04:10:00.000Z",
+      "acknowledgedAt": null,
+      "resolvedAt": null,
+      "ownerUserId": 6,
+      "ownerName": "Rosa Fernandez",
+      "assignedUserIds": [
+        11,
+        13
+      ],
+      "facilityId": "FAC-PHM-001",
+      "facilityName": "San Gabriel Hospital Pharmacy",
+      "segment": "hospital-pharmacy",
+      "organization": "San Gabriel Hospital"
+    },
+    {
+      "id": 3,
+      "type": "Door",
+      "title": "Cabinet door open",
+      "description": "Controlled drug cabinet door remains open.",
+      "severity": "critical",
+      "status": "acknowledged",
+      "deviceId": "SEN-PHM-003",
+      "deviceName": "Controlled Drugs Cabinet Door",
+      "location": "Hospital Pharmacy - Restricted Area",
+      "assignedTo": "Rosa Fernandez",
+      "createdAt": "2026-06-19T05:10:00.000Z",
+      "acknowledgedAt": null,
+      "resolvedAt": null,
+      "ownerUserId": 6,
+      "ownerName": "Rosa Fernandez",
+      "assignedUserIds": [
+        10,
+        15
+      ],
+      "facilityId": "FAC-PHM-001",
+      "facilityName": "San Gabriel Hospital Pharmacy",
+      "segment": "hospital-pharmacy",
+      "organization": "San Gabriel Hospital"
+    },
+    {
+      "id": 4,
+      "type": "Vibration",
+      "title": "Incubator vibration warning",
+      "description": "North incubator has abnormal vibration readings.",
+      "severity": "warning",
+      "status": "active",
+      "deviceId": "SEN-CLN-006",
+      "deviceName": "North Incubator Vibration",
+      "location": "North Lab - Culture Room",
+      "assignedTo": "Patricia Rivas",
+      "createdAt": "2026-06-19T06:10:00.000Z",
+      "acknowledgedAt": null,
+      "resolvedAt": null,
+      "ownerUserId": 5,
+      "ownerName": "Patricia Rivas",
+      "assignedUserIds": [
+        9,
+        14
+      ],
+      "facilityId": "FAC-CLN-002",
+      "facilityName": "North Province Clinical Lab",
+      "segment": "clinical-laboratory",
+      "organization": "North Province Health Center"
+    },
+    {
+      "id": 5,
+      "type": "Temperature",
+      "title": "Vaccine fridge stable",
+      "description": "Vaccine fridge returned to normal range.",
+      "severity": "info",
+      "status": "resolved",
+      "deviceId": "SEN-PHM-001",
+      "deviceName": "Vaccine Fridge Temperature",
+      "location": "Hospital Pharmacy - Vaccines",
+      "assignedTo": "Rosa Fernandez",
+      "createdAt": "2026-06-19T07:10:00.000Z",
+      "acknowledgedAt": null,
+      "resolvedAt": null,
+      "ownerUserId": 6,
+      "ownerName": "Rosa Fernandez",
+      "assignedUserIds": [
+        10
+      ],
+      "facilityId": "FAC-PHM-001",
+      "facilityName": "San Gabriel Hospital Pharmacy",
+      "segment": "hospital-pharmacy",
+      "organization": "San Gabriel Hospital"
+    },
+    {
+      "id": 6,
+      "type": "Humidity",
+      "title": "Hematology humidity reviewed",
+      "description": "Humidity in hematology room requires monitoring.",
+      "severity": "warning",
+      "status": "acknowledged",
+      "deviceId": "SEN-CLN-002",
+      "deviceName": "Hematology Room Humidity",
+      "location": "Central Lab - Hematology",
+      "assignedTo": "Carlos Mendoza",
+      "createdAt": "2026-06-19T02:10:00.000Z",
+      "acknowledgedAt": null,
+      "resolvedAt": null,
+      "ownerUserId": 4,
+      "ownerName": "Carlos Mendoza",
+      "assignedUserIds": [
+        8,
+        12
+      ],
+      "facilityId": "FAC-CLN-001",
+      "facilityName": "Central Clinical Laboratory",
+      "segment": "clinical-laboratory",
+      "organization": "Andes Clinical Network"
+    }
+  ],
+  "notifications": [
+    {
+      "id": 1,
+      "alertId": 1,
+      "recipientId": 4,
+      "title": "Critical freezer alert",
+      "message": "PCR freezer exceeded the configured temperature range.",
+      "source": "alerts",
+      "severity": "critical",
+      "channel": "in-app",
+      "status": "unread",
+      "createdAt": "2026-06-19T04:10:00.000Z",
+      "sentAt": "2026-06-19T04:10:00.000Z",
+      "deliveredAt": "2026-06-19T04:10:10.000Z",
+      "readAt": null,
+      "retryCount": 0
+    },
+    {
+      "id": 2,
+      "alertId": 2,
+      "recipientId": 6,
+      "title": "Humidity deviation",
+      "message": "Insulin storage requires validation.",
+      "source": "alerts",
+      "severity": "warning",
+      "channel": "in-app",
+      "status": "unread",
+      "createdAt": "2026-06-19T05:10:00.000Z",
+      "sentAt": "2026-06-19T05:10:00.000Z",
+      "deliveredAt": "2026-06-19T05:10:10.000Z",
+      "readAt": null,
+      "retryCount": 0
+    },
+    {
+      "id": 3,
+      "alertId": 4,
+      "recipientId": 14,
+      "title": "Maintenance review",
+      "message": "North incubator needs vibration inspection.",
+      "source": "remote-control",
+      "severity": "warning",
+      "channel": "in-app",
+      "status": "read",
+      "createdAt": "2026-06-19T06:10:00.000Z",
+      "sentAt": "2026-06-19T06:10:00.000Z",
+      "deliveredAt": "2026-06-19T06:10:10.000Z",
+      "readAt": "2026-06-19T06:15:00.000Z",
+      "retryCount": 0
+    }
+  ],
+  "remoteActuators": [
+    {
+      "id": 1,
+      "name": "Freezer A Relay",
+      "code": "ACT-001",
+      "type": "Relay",
+      "location": "Central Lab - Storage 1",
+      "linkedSensorCode": "SEN-CLN-001",
+      "status": "online",
+      "safetyState": "enabled",
+      "commandStatus": "idle",
+      "lastCommand": "Standby",
+      "lastCommandAt": "2026-06-19T08:00:00.000Z",
+      "supports": [
+        "start",
+        "stop",
+        "reset"
+      ],
+      "ownerUserId": 4,
+      "ownerName": "Carlos Mendoza",
+      "assignedUserIds": [
+        14
+      ],
+      "facilityId": "FAC-CLN-001",
+      "facilityName": "Central Clinical Laboratory",
+      "segment": "clinical-laboratory",
+      "organization": "Andes Clinical Network"
+    },
+    {
+      "id": 2,
+      "name": "PCR Freezer Emergency Cooling",
+      "code": "ACT-002",
+      "type": "Cooling",
+      "location": "Central Lab - PCR Room",
+      "linkedSensorCode": "SEN-CLN-003",
+      "status": "online",
+      "safetyState": "enabled",
+      "commandStatus": "idle",
+      "lastCommand": "Standby",
+      "lastCommandAt": "2026-06-19T08:00:00.000Z",
+      "supports": [
+        "start",
+        "stop",
+        "reset"
+      ],
+      "ownerUserId": 4,
+      "ownerName": "Carlos Mendoza",
+      "assignedUserIds": [
+        14
+      ],
+      "facilityId": "FAC-CLN-001",
+      "facilityName": "Central Clinical Laboratory",
+      "segment": "clinical-laboratory",
+      "organization": "Andes Clinical Network"
+    },
+    {
+      "id": 3,
+      "name": "North Incubator Power Cycle",
+      "code": "ACT-003",
+      "type": "Power",
+      "location": "North Lab - Culture Room",
+      "linkedSensorCode": "SEN-CLN-006",
+      "status": "online",
+      "safetyState": "blocked",
+      "commandStatus": "blocked",
+      "lastCommand": "Standby",
+      "lastCommandAt": "2026-06-19T08:00:00.000Z",
+      "supports": [
+        "start",
+        "stop",
+        "reset"
+      ],
+      "ownerUserId": 5,
+      "ownerName": "Patricia Rivas",
+      "assignedUserIds": [
+        14
+      ],
+      "facilityId": "FAC-CLN-002",
+      "facilityName": "North Province Clinical Lab",
+      "segment": "clinical-laboratory",
+      "organization": "North Province Health Center"
+    },
+    {
+      "id": 4,
+      "name": "Vaccine Fridge Compressor",
+      "code": "ACT-004",
+      "type": "Cooling",
+      "location": "Hospital Pharmacy - Vaccines",
+      "linkedSensorCode": "SEN-PHM-001",
+      "status": "online",
+      "safetyState": "enabled",
+      "commandStatus": "idle",
+      "lastCommand": "Standby",
+      "lastCommandAt": "2026-06-19T08:00:00.000Z",
+      "supports": [
+        "start",
+        "stop",
+        "reset"
+      ],
+      "ownerUserId": 6,
+      "ownerName": "Rosa Fernandez",
+      "assignedUserIds": [
+        15
+      ],
+      "facilityId": "FAC-PHM-001",
+      "facilityName": "San Gabriel Hospital Pharmacy",
+      "segment": "hospital-pharmacy",
+      "organization": "San Gabriel Hospital"
+    },
+    {
+      "id": 5,
+      "name": "Controlled Cabinet Lock",
+      "code": "ACT-005",
+      "type": "Lock",
+      "location": "Hospital Pharmacy - Restricted Area",
+      "linkedSensorCode": "SEN-PHM-003",
+      "status": "offline",
+      "safetyState": "blocked",
+      "commandStatus": "blocked",
+      "lastCommand": "Standby",
+      "lastCommandAt": "2026-06-19T08:00:00.000Z",
+      "supports": [
+        "start",
+        "stop",
+        "reset"
+      ],
+      "ownerUserId": 6,
+      "ownerName": "Rosa Fernandez",
+      "assignedUserIds": [
+        15
+      ],
+      "facilityId": "FAC-PHM-001",
+      "facilityName": "San Gabriel Hospital Pharmacy",
+      "segment": "hospital-pharmacy",
+      "organization": "San Gabriel Hospital"
+    }
+  ],
+  "remoteCommands": [
+    {
+      "id": 1,
+      "actuatorId": 2,
+      "actuatorName": "PCR Freezer Emergency Cooling",
+      "type": "start",
+      "requestedBy": "Miguel Rojas",
+      "status": "completed",
+      "createdAt": "2026-06-19T08:10:00.000Z",
+      "completedAt": "2026-06-19T08:11:00.000Z",
+      "result": "Cooling cycle started",
+      "notes": "Simulated command",
+      "ownerUserId": 4,
+      "ownerName": "Carlos Mendoza",
+      "assignedUserIds": [
+        14
+      ],
+      "facilityId": "FAC-CLN-001",
+      "facilityName": "Central Clinical Laboratory",
+      "segment": "clinical-laboratory",
+      "organization": "Andes Clinical Network"
+    },
+    {
+      "id": 2,
+      "actuatorId": 4,
+      "actuatorName": "Vaccine Fridge Compressor",
+      "type": "reset",
+      "requestedBy": "Paola Campos",
+      "status": "completed",
+      "createdAt": "2026-06-19T08:25:00.000Z",
+      "completedAt": "2026-06-19T08:26:00.000Z",
+      "result": "Compressor reset completed",
+      "notes": "Simulated command",
+      "ownerUserId": 6,
+      "ownerName": "Rosa Fernandez",
+      "assignedUserIds": [
+        15
+      ],
+      "facilityId": "FAC-PHM-001",
+      "facilityName": "San Gabriel Hospital Pharmacy",
+      "segment": "hospital-pharmacy",
+      "organization": "San Gabriel Hospital"
+    }
+  ],
+  "deviceControlPolicies": [
+    {
+      "id": 1,
+      "name": "Safe command confirmation",
+      "description": "Every remote command requires user confirmation before execution.",
+      "isActive": true
+    },
+    {
+      "id": 2,
+      "name": "Locked devices cannot be controlled",
+      "description": "Devices in locked safety state reject command execution.",
+      "isActive": true
+    },
+    {
+      "id": 3,
+      "name": "Disconnected devices are read-only",
+      "description": "Offline devices can be reviewed but cannot receive remote commands.",
+      "isActive": true
+    }
+  ],
+  "sensors": [
+    {
+      "id": 1,
+      "name": "Reagent Freezer Temperature",
+      "code": "SEN-CLN-001",
+      "type": "Temperature",
+      "value": 4.2,
+      "status": "Normal",
+      "sensorStatus": "Active",
+      "installedAt": "2026-05-20T08:00:00.000Z",
+      "lastReadingAt": "2026-06-19T03:21:00.000Z",
+      "thresholds": [
+        {
+          "id": "TH-SEN-CLN-001",
+          "minValue": 2,
+          "maxValue": 8,
+          "status": "Active"
+        }
+      ],
+      "calibrations": [
+        {
+          "id": "CAL-SEN-CLN-001",
+          "status": "Completed",
+          "performedAt": "2026-06-01T08:00:00.000Z"
+        }
+      ],
+      "ownerUserId": 4,
+      "ownerName": "Carlos Mendoza",
+      "assignedUserIds": [
+        7,
+        12,
+        14
+      ],
+      "facilityId": "FAC-CLN-001",
+      "facilityName": "Central Clinical Laboratory",
+      "segment": "clinical-laboratory",
+      "organization": "Andes Clinical Network"
+    },
+    {
+      "id": 2,
+      "name": "Hematology Room Humidity",
+      "code": "SEN-CLN-002",
+      "type": "Humidity",
+      "value": 46,
+      "status": "Normal",
+      "sensorStatus": "Active",
+      "installedAt": "2026-05-20T08:00:00.000Z",
+      "lastReadingAt": "2026-06-19T04:22:00.000Z",
+      "thresholds": [
+        {
+          "id": "TH-SEN-CLN-002",
+          "minValue": 35,
+          "maxValue": 60,
+          "status": "Active"
+        }
+      ],
+      "calibrations": [
+        {
+          "id": "CAL-SEN-CLN-002",
+          "status": "Completed",
+          "performedAt": "2026-06-01T08:00:00.000Z"
+        }
+      ],
+      "ownerUserId": 4,
+      "ownerName": "Carlos Mendoza",
+      "assignedUserIds": [
+        8,
+        12
+      ],
+      "facilityId": "FAC-CLN-001",
+      "facilityName": "Central Clinical Laboratory",
+      "segment": "clinical-laboratory",
+      "organization": "Andes Clinical Network"
+    },
+    {
+      "id": 3,
+      "name": "PCR Freezer Temperature",
+      "code": "SEN-CLN-003",
+      "type": "Temperature",
+      "value": 9.1,
+      "status": "OutOfRange",
+      "sensorStatus": "Active",
+      "installedAt": "2026-05-20T08:00:00.000Z",
+      "lastReadingAt": "2026-06-19T05:23:00.000Z",
+      "thresholds": [
+        {
+          "id": "TH-SEN-CLN-003",
+          "minValue": 2,
+          "maxValue": 8,
+          "status": "Active"
+        }
+      ],
+      "calibrations": [
+        {
+          "id": "CAL-SEN-CLN-003",
+          "status": "Completed",
+          "performedAt": "2026-06-01T08:00:00.000Z"
+        }
+      ],
+      "ownerUserId": 4,
+      "ownerName": "Carlos Mendoza",
+      "assignedUserIds": [
+        7,
+        14
+      ],
+      "facilityId": "FAC-CLN-001",
+      "facilityName": "Central Clinical Laboratory",
+      "segment": "clinical-laboratory",
+      "organization": "Andes Clinical Network"
+    },
+    {
+      "id": 4,
+      "name": "Sample Storage Door",
+      "code": "SEN-CLN-004",
+      "type": "DoorStatus",
+      "value": "Closed",
+      "status": "Normal",
+      "sensorStatus": "Active",
+      "installedAt": "2026-05-20T08:00:00.000Z",
+      "lastReadingAt": "2026-06-19T06:24:00.000Z",
+      "thresholds": [
+        {
+          "id": "TH-SEN-CLN-004",
+          "minValue": 0,
+          "maxValue": 1,
+          "status": "Active"
+        }
+      ],
+      "calibrations": [
+        {
+          "id": "CAL-SEN-CLN-004",
+          "status": "Completed",
+          "performedAt": "2026-06-01T08:00:00.000Z"
+        }
+      ],
+      "ownerUserId": 4,
+      "ownerName": "Carlos Mendoza",
+      "assignedUserIds": [
+        8,
+        14
+      ],
+      "facilityId": "FAC-CLN-001",
+      "facilityName": "Central Clinical Laboratory",
+      "segment": "clinical-laboratory",
+      "organization": "Andes Clinical Network"
+    },
+    {
+      "id": 5,
+      "name": "North Lab Reagent Refrigerator",
+      "code": "SEN-CLN-005",
+      "type": "Temperature",
+      "value": 3.7,
+      "status": "Normal",
+      "sensorStatus": "Active",
+      "installedAt": "2026-05-20T08:00:00.000Z",
+      "lastReadingAt": "2026-06-19T07:25:00.000Z",
+      "thresholds": [
+        {
+          "id": "TH-SEN-CLN-005",
+          "minValue": 2,
+          "maxValue": 8,
+          "status": "Active"
+        }
+      ],
+      "calibrations": [
+        {
+          "id": "CAL-SEN-CLN-005",
+          "status": "Completed",
+          "performedAt": "2026-06-01T08:00:00.000Z"
+        }
+      ],
+      "ownerUserId": 5,
+      "ownerName": "Patricia Rivas",
+      "assignedUserIds": [
+        9
+      ],
+      "facilityId": "FAC-CLN-002",
+      "facilityName": "North Province Clinical Lab",
+      "segment": "clinical-laboratory",
+      "organization": "North Province Health Center"
+    },
+    {
+      "id": 6,
+      "name": "North Incubator Vibration",
+      "code": "SEN-CLN-006",
+      "type": "Vibration",
+      "value": 4.8,
+      "status": "OutOfRange",
+      "sensorStatus": "Maintenance",
+      "installedAt": "2026-05-20T08:00:00.000Z",
+      "lastReadingAt": "2026-06-19T02:26:00.000Z",
+      "thresholds": [
+        {
+          "id": "TH-SEN-CLN-006",
+          "minValue": 0,
+          "maxValue": 3,
+          "status": "Active"
+        }
+      ],
+      "calibrations": [
+        {
+          "id": "CAL-SEN-CLN-006",
+          "status": "Completed",
+          "performedAt": "2026-06-01T08:00:00.000Z"
+        }
+      ],
+      "ownerUserId": 5,
+      "ownerName": "Patricia Rivas",
+      "assignedUserIds": [
+        9,
+        14
+      ],
+      "facilityId": "FAC-CLN-002",
+      "facilityName": "North Province Clinical Lab",
+      "segment": "clinical-laboratory",
+      "organization": "North Province Health Center"
+    },
+    {
+      "id": 7,
+      "name": "Vaccine Fridge Temperature",
+      "code": "SEN-PHM-001",
+      "type": "Temperature",
+      "value": 5.1,
+      "status": "Normal",
+      "sensorStatus": "Active",
+      "installedAt": "2026-05-20T08:00:00.000Z",
+      "lastReadingAt": "2026-06-19T03:27:00.000Z",
+      "thresholds": [
+        {
+          "id": "TH-SEN-PHM-001",
+          "minValue": 2,
+          "maxValue": 8,
+          "status": "Active"
+        }
+      ],
+      "calibrations": [
+        {
+          "id": "CAL-SEN-PHM-001",
+          "status": "Completed",
+          "performedAt": "2026-06-01T08:00:00.000Z"
+        }
+      ],
+      "ownerUserId": 6,
+      "ownerName": "Rosa Fernandez",
+      "assignedUserIds": [
+        10,
+        13,
+        15
+      ],
+      "facilityId": "FAC-PHM-001",
+      "facilityName": "San Gabriel Hospital Pharmacy",
+      "segment": "hospital-pharmacy",
+      "organization": "San Gabriel Hospital"
+    },
+    {
+      "id": 8,
+      "name": "Insulin Storage Humidity",
+      "code": "SEN-PHM-002",
+      "type": "Humidity",
+      "value": 64,
+      "status": "OutOfRange",
+      "sensorStatus": "Active",
+      "installedAt": "2026-05-20T08:00:00.000Z",
+      "lastReadingAt": "2026-06-19T04:28:00.000Z",
+      "thresholds": [
+        {
+          "id": "TH-SEN-PHM-002",
+          "minValue": 35,
+          "maxValue": 60,
+          "status": "Active"
+        }
+      ],
+      "calibrations": [
+        {
+          "id": "CAL-SEN-PHM-002",
+          "status": "Completed",
+          "performedAt": "2026-06-01T08:00:00.000Z"
+        }
+      ],
+      "ownerUserId": 6,
+      "ownerName": "Rosa Fernandez",
+      "assignedUserIds": [
+        11,
+        13
+      ],
+      "facilityId": "FAC-PHM-001",
+      "facilityName": "San Gabriel Hospital Pharmacy",
+      "segment": "hospital-pharmacy",
+      "organization": "San Gabriel Hospital"
+    },
+    {
+      "id": 9,
+      "name": "Controlled Drugs Cabinet Door",
+      "code": "SEN-PHM-003",
+      "type": "DoorStatus",
+      "value": "Open",
+      "status": "Invalid",
+      "sensorStatus": "Disconnected",
+      "installedAt": "2026-05-20T08:00:00.000Z",
+      "lastReadingAt": "2026-06-19T05:29:00.000Z",
+      "thresholds": [
+        {
+          "id": "TH-SEN-PHM-003",
+          "minValue": 0,
+          "maxValue": 1,
+          "status": "Active"
+        }
+      ],
+      "calibrations": [
+        {
+          "id": "CAL-SEN-PHM-003",
+          "status": "Completed",
+          "performedAt": "2026-06-01T08:00:00.000Z"
+        }
+      ],
+      "ownerUserId": 6,
+      "ownerName": "Rosa Fernandez",
+      "assignedUserIds": [
+        10,
+        15
+      ],
+      "facilityId": "FAC-PHM-001",
+      "facilityName": "San Gabriel Hospital Pharmacy",
+      "segment": "hospital-pharmacy",
+      "organization": "San Gabriel Hospital"
+    },
+    {
+      "id": 10,
+      "name": "Cold Room Energy Meter",
+      "code": "SEN-PHM-004",
+      "type": "Energy",
+      "value": 18,
+      "status": "Normal",
+      "sensorStatus": "Active",
+      "installedAt": "2026-05-20T08:00:00.000Z",
+      "lastReadingAt": "2026-06-19T06:20:00.000Z",
+      "thresholds": [
+        {
+          "id": "TH-SEN-PHM-004",
+          "minValue": 0,
+          "maxValue": 25,
+          "status": "Active"
+        }
+      ],
+      "calibrations": [
+        {
+          "id": "CAL-SEN-PHM-004",
+          "status": "Completed",
+          "performedAt": "2026-06-01T08:00:00.000Z"
+        }
+      ],
+      "ownerUserId": 6,
+      "ownerName": "Rosa Fernandez",
+      "assignedUserIds": [
+        11,
+        15
+      ],
+      "facilityId": "FAC-PHM-001",
+      "facilityName": "San Gabriel Hospital Pharmacy",
+      "segment": "hospital-pharmacy",
+      "organization": "San Gabriel Hospital"
+    }
+  ],
+  "assets": [
+    {
+      "id": 1,
+      "code": "AST-001",
+      "name": "Reagent Freezer A",
+      "category": "Cold Storage",
+      "storageUnit": "Freezer A",
+      "location": "Central Lab - Storage 1",
+      "status": "compliant",
+      "lastInspection": "2026-06-17",
+      "responsible": "Carlos Mendoza",
+      "ownerUserId": 4,
+      "ownerName": "Carlos Mendoza",
+      "assignedUserIds": [
+        7,
+        12
+      ],
+      "facilityId": "FAC-CLN-001",
+      "facilityName": "Central Clinical Laboratory",
+      "segment": "clinical-laboratory",
+      "organization": "Andes Clinical Network"
+    },
+    {
+      "id": 2,
+      "code": "AST-002",
+      "name": "PCR Reagent Rack",
+      "category": "Reagent Storage",
+      "storageUnit": "PCR Rack",
+      "location": "Central Lab - PCR Room",
+      "status": "critical",
+      "lastInspection": "2026-06-18",
+      "responsible": "Carlos Mendoza",
+      "ownerUserId": 4,
+      "ownerName": "Carlos Mendoza",
+      "assignedUserIds": [
+        7,
+        14
+      ],
+      "facilityId": "FAC-CLN-001",
+      "facilityName": "Central Clinical Laboratory",
+      "segment": "clinical-laboratory",
+      "organization": "Andes Clinical Network"
+    },
+    {
+      "id": 3,
+      "code": "AST-003",
+      "name": "Hematology Analyzer Reagents",
+      "category": "Analyzer Supplies",
+      "storageUnit": "Rack H1",
+      "location": "Central Lab - Hematology",
+      "status": "warning",
+      "lastInspection": "2026-06-16",
+      "responsible": "Carlos Mendoza",
+      "ownerUserId": 4,
+      "ownerName": "Carlos Mendoza",
+      "assignedUserIds": [
+        8
+      ],
+      "facilityId": "FAC-CLN-001",
+      "facilityName": "Central Clinical Laboratory",
+      "segment": "clinical-laboratory",
+      "organization": "Andes Clinical Network"
+    },
+    {
+      "id": 4,
+      "code": "AST-004",
+      "name": "North Lab Refrigerator",
+      "category": "Cold Storage",
+      "storageUnit": "Fridge N1",
+      "location": "North Lab - Storage",
+      "status": "compliant",
+      "lastInspection": "2026-06-15",
+      "responsible": "Patricia Rivas",
+      "ownerUserId": 5,
+      "ownerName": "Patricia Rivas",
+      "assignedUserIds": [
+        9
+      ],
+      "facilityId": "FAC-CLN-002",
+      "facilityName": "North Province Clinical Lab",
+      "segment": "clinical-laboratory",
+      "organization": "North Province Health Center"
+    },
+    {
+      "id": 5,
+      "code": "AST-005",
+      "name": "North Incubator",
+      "category": "Equipment",
+      "storageUnit": "Incubator N2",
+      "location": "North Lab - Culture Room",
+      "status": "warning",
+      "lastInspection": "2026-06-18",
+      "responsible": "Patricia Rivas",
+      "ownerUserId": 5,
+      "ownerName": "Patricia Rivas",
+      "assignedUserIds": [
+        9,
+        14
+      ],
+      "facilityId": "FAC-CLN-002",
+      "facilityName": "North Province Clinical Lab",
+      "segment": "clinical-laboratory",
+      "organization": "North Province Health Center"
+    },
+    {
+      "id": 6,
+      "code": "AST-006",
+      "name": "Vaccine Batch VX-102",
+      "category": "Vaccines",
+      "storageUnit": "Fridge V1",
+      "location": "Hospital Pharmacy - Vaccines",
+      "status": "compliant",
+      "lastInspection": "2026-06-18",
+      "responsible": "Rosa Fernandez",
+      "ownerUserId": 6,
+      "ownerName": "Rosa Fernandez",
+      "assignedUserIds": [
+        10,
+        13
+      ],
+      "facilityId": "FAC-PHM-001",
+      "facilityName": "San Gabriel Hospital Pharmacy",
+      "segment": "hospital-pharmacy",
+      "organization": "San Gabriel Hospital"
+    },
+    {
+      "id": 7,
+      "code": "AST-007",
+      "name": "Insulin Batch IN-44",
+      "category": "Medication",
+      "storageUnit": "Fridge I2",
+      "location": "Hospital Pharmacy - Insulin",
+      "status": "critical",
+      "lastInspection": "2026-06-19",
+      "responsible": "Rosa Fernandez",
+      "ownerUserId": 6,
+      "ownerName": "Rosa Fernandez",
+      "assignedUserIds": [
+        11,
+        13,
+        15
+      ],
+      "facilityId": "FAC-PHM-001",
+      "facilityName": "San Gabriel Hospital Pharmacy",
+      "segment": "hospital-pharmacy",
+      "organization": "San Gabriel Hospital"
+    },
+    {
+      "id": 8,
+      "code": "AST-008",
+      "name": "Controlled Drugs Cabinet",
+      "category": "Medication Cabinet",
+      "storageUnit": "Cabinet CD1",
+      "location": "Hospital Pharmacy - Restricted Area",
+      "status": "warning",
+      "lastInspection": "2026-06-19",
+      "responsible": "Rosa Fernandez",
+      "ownerUserId": 6,
+      "ownerName": "Rosa Fernandez",
+      "assignedUserIds": [
+        10,
+        15
+      ],
+      "facilityId": "FAC-PHM-001",
+      "facilityName": "San Gabriel Hospital Pharmacy",
+      "segment": "hospital-pharmacy",
+      "organization": "San Gabriel Hospital"
+    },
+    {
+      "id": 9,
+      "code": "AST-009",
+      "name": "Cold Room Compressor",
+      "category": "Infrastructure",
+      "storageUnit": "Cold Room CR1",
+      "location": "Hospital Pharmacy - Cold Room",
+      "status": "compliant",
+      "lastInspection": "2026-06-14",
+      "responsible": "Rosa Fernandez",
+      "ownerUserId": 6,
+      "ownerName": "Rosa Fernandez",
+      "assignedUserIds": [
+        11,
+        15
+      ],
+      "facilityId": "FAC-PHM-001",
+      "facilityName": "San Gabriel Hospital Pharmacy",
+      "segment": "hospital-pharmacy",
+      "organization": "San Gabriel Hospital"
+    }
+  ],
+  "dashboardOverview": {
+    "fallback": false,
+    "lastUpdated": "2026-05-13T05:30:00",
+    "healthScore": 98.7,
+    "kpis": [
+      {
+        "key": "activeSensors",
+        "labelKey": "dashboardOverview.kpis.activeSensors",
+        "value": 24,
+        "unit": "",
+        "trendKey": "dashboardOverview.trendsText.online",
+        "status": "success",
+        "icon": "pi pi-wifi"
+      },
+      {
+        "key": "storageUnits",
+        "labelKey": "dashboardOverview.kpis.storageUnits",
+        "value": 35,
+        "unit": "",
+        "trendKey": "dashboardOverview.trendsText.monitored",
+        "status": "success",
+        "icon": "pi pi-box"
+      },
+      {
+        "key": "complianceScore",
+        "labelKey": "dashboardOverview.kpis.complianceScore",
+        "value": 98.7,
+        "unit": "%",
+        "trendKey": "dashboardOverview.trendsText.improved",
+        "status": "success",
+        "icon": "pi pi-check-circle"
+      },
+      {
+        "key": "openAlerts",
+        "labelKey": "dashboardOverview.kpis.openAlerts",
+        "value": 3,
+        "unit": "",
+        "trendKey": "dashboardOverview.trendsText.requiresAttention",
+        "status": "warning",
+        "icon": "pi pi-bell"
+      },
+      {
+        "key": "criticalIncidents",
+        "labelKey": "dashboardOverview.kpis.criticalIncidents",
+        "value": 1,
+        "unit": "",
+        "trendKey": "dashboardOverview.trendsText.urgent",
+        "status": "danger",
+        "icon": "pi pi-exclamation-triangle"
+      },
+      {
+        "key": "reportsReady",
+        "labelKey": "dashboardOverview.kpis.reportsReady",
+        "value": 8,
+        "unit": "",
+        "trendKey": "dashboardOverview.trendsText.exportable",
+        "status": "neutral",
+        "icon": "pi pi-file-export"
+      }
+    ],
+    "compliance": {
+      "score": 98.7,
+      "compliantStorage": 32,
+      "totalStorage": 35,
+      "violatedRules": 2,
+      "evidenceReady": 18,
+      "nextAuditKey": "dashboardOverview.values.nextAudit"
+    },
+    "widgets": [
+      {
+        "id": "laboratory",
+        "titleKey": "dashboardOverview.widgets.laboratory",
+        "type": "summary",
+        "value": "98.7%",
+        "status": "success",
+        "descriptionKey": "dashboardOverview.widgets.laboratoryCopy",
+        "route": "/dashboard-overview/laboratory-dashboard"
+      },
+      {
+        "id": "compliance",
+        "titleKey": "dashboardOverview.widgets.compliance",
+        "type": "summary",
+        "value": 2,
+        "status": "warning",
+        "descriptionKey": "dashboardOverview.widgets.complianceCopy",
+        "route": "/dashboard-overview/compliance-overview"
+      },
+      {
+        "id": "platform",
+        "titleKey": "dashboardOverview.widgets.platform",
+        "type": "summary",
+        "value": 12,
+        "status": "success",
+        "descriptionKey": "dashboardOverview.widgets.platformCopy",
+        "route": "/dashboard-overview/platform-overview"
+      },
+      {
+        "id": "kpis",
+        "titleKey": "dashboardOverview.widgets.kpis",
+        "type": "summary",
+        "value": 6,
+        "status": "neutral",
+        "descriptionKey": "dashboardOverview.widgets.kpisCopy",
+        "route": "/dashboard-overview/kpi-summary"
+      },
+      {
+        "id": "alerts",
+        "titleKey": "dashboardOverview.widgets.alerts",
+        "type": "summary",
+        "value": 3,
+        "status": "warning",
+        "descriptionKey": "dashboardOverview.widgets.alertsCopy",
+        "route": "/dashboard-overview/alert-overview"
+      },
+      {
+        "id": "assets",
+        "titleKey": "dashboardOverview.widgets.assets",
+        "type": "summary",
+        "value": 156,
+        "status": "success",
+        "descriptionKey": "dashboardOverview.widgets.assetsCopy",
+        "route": "/dashboard-overview/asset-overview"
+      },
+      {
+        "id": "sensors",
+        "titleKey": "dashboardOverview.widgets.sensors",
+        "type": "summary",
+        "value": 24,
+        "status": "success",
+        "descriptionKey": "dashboardOverview.widgets.sensorsCopy",
+        "route": "/dashboard-overview/sensor-overview"
+      },
+      {
+        "id": "incidents",
+        "titleKey": "dashboardOverview.widgets.incidents",
+        "type": "summary",
+        "value": 3,
+        "status": "danger",
+        "descriptionKey": "dashboardOverview.widgets.incidentsCopy",
+        "route": "/dashboard-overview/incident-overview"
+      }
+    ],
+    "notifications": [
+      {
+        "id": 1,
+        "severity": "danger",
+        "titleKey": "dashboardOverview.notifications.freezerTitle",
+        "messageKey": "dashboardOverview.notifications.freezerMessage",
+        "time": "05:30",
+        "source": "Freezer A-01"
+      },
+      {
+        "id": 2,
+        "severity": "warning",
+        "titleKey": "dashboardOverview.notifications.humidityTitle",
+        "messageKey": "dashboardOverview.notifications.humidityMessage",
+        "time": "04:55",
+        "source": "Storage B"
+      },
+      {
+        "id": 3,
+        "severity": "success",
+        "titleKey": "dashboardOverview.notifications.reportTitle",
+        "messageKey": "dashboardOverview.notifications.reportMessage",
+        "time": "03:40",
+        "source": "Compliance"
+      },
+      {
+        "id": 4,
+        "severity": "neutral",
+        "titleKey": "dashboardOverview.notifications.sensorTitle",
+        "messageKey": "dashboardOverview.notifications.sensorMessage",
+        "time": "02:10",
+        "source": "Sensor T-204"
+      }
+    ],
+    "trends": [
+      {
+        "labelKey": "dashboardOverview.trends.temperature",
+        "values": [
+          4.1,
+          4.2,
+          4,
+          4.3,
+          4.2,
+          4.1,
+          4.2
+        ],
+        "unit": "°C"
+      },
+      {
+        "labelKey": "dashboardOverview.trends.humidity",
+        "values": [
+          45,
+          46,
+          44,
+          45,
+          47,
+          46,
+          45
+        ],
+        "unit": "%"
+      },
+      {
+        "labelKey": "dashboardOverview.trends.alerts",
+        "values": [
+          6,
+          5,
+          4,
+          5,
+          3,
+          4,
+          3
+        ],
+        "unit": ""
+      },
+      {
+        "labelKey": "dashboardOverview.trends.compliance",
+        "values": [
+          94,
+          95,
+          96,
+          96,
+          97,
+          98,
+          98.7
+        ],
+        "unit": "%"
+      }
+    ],
+    "filters": [
+      {
+        "key": "role",
+        "labelKey": "dashboardOverview.filters.role",
+        "value": "Role-aware workspace"
+      },
+      {
+        "key": "laboratory",
+        "labelKey": "dashboardOverview.filters.laboratory",
+        "value": "Current user facility or global administrator scope"
+      },
+      {
+        "key": "period",
+        "labelKey": "dashboardOverview.filters.period",
+        "valueKey": "dashboardOverview.values.last24Hours"
+      },
+      {
+        "key": "refreshRate",
+        "labelKey": "dashboardOverview.filters.refreshRate",
+        "valueKey": "dashboardOverview.values.refreshRate"
+      }
+    ],
+    "laboratories": [
+      {
+        "id": "lab-a",
+        "name": "Central Lab A",
+        "score": 99,
+        "sensors": 8,
+        "alerts": 1,
+        "status": "success"
+      },
+      {
+        "id": "lab-b",
+        "name": "Storage Room B",
+        "score": 96,
+        "sensors": 6,
+        "alerts": 2,
+        "status": "warning"
+      },
+      {
+        "id": "pharma-01",
+        "name": "Pharma Cold Chain",
+        "score": 100,
+        "sensors": 10,
+        "alerts": 0,
+        "status": "success"
+      }
+    ],
+    "operationalRisks": [
+      {
+        "id": 1,
+        "labelKey": "dashboardOverview.risks.temperatureDeviation",
+        "value": 1,
+        "status": "danger"
+      },
+      {
+        "id": 2,
+        "labelKey": "dashboardOverview.risks.disconnectedSensors",
+        "value": 0,
+        "status": "success"
+      },
+      {
+        "id": 3,
+        "labelKey": "dashboardOverview.risks.pendingEvidence",
+        "value": 2,
+        "status": "warning"
+      },
+      {
+        "id": 4,
+        "labelKey": "dashboardOverview.risks.openIncidents",
+        "value": 3,
+        "status": "warning"
+      }
+    ]
+  },
+  "reports": [
+    {
+      "id": 1,
+      "code": "RPT-001",
+      "title": "Central Lab Temperature Compliance",
+      "equipmentId": "SEN-CLN-003",
+      "equipmentName": "PCR Freezer Temperature",
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-19",
+      "format": "pdf",
+      "status": "generated",
+      "createdAt": "2026-06-11T09:00:00.000Z",
+      "downloadUrl": "#",
+      "ownerUserId": 4,
+      "ownerName": "Carlos Mendoza",
+      "assignedUserIds": [
+        12
+      ],
+      "facilityId": "FAC-CLN-001",
+      "facilityName": "Central Clinical Laboratory",
+      "segment": "clinical-laboratory",
+      "organization": "Andes Clinical Network"
+    },
+    {
+      "id": 2,
+      "code": "RPT-002",
+      "title": "North Lab Incident Summary",
+      "equipmentId": "SEN-CLN-006",
+      "equipmentName": "North Incubator Vibration",
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-19",
+      "format": "xlsx",
+      "status": "generated",
+      "createdAt": "2026-06-12T09:00:00.000Z",
+      "downloadUrl": "#",
+      "ownerUserId": 5,
+      "ownerName": "Patricia Rivas",
+      "assignedUserIds": [
+        9
+      ],
+      "facilityId": "FAC-CLN-002",
+      "facilityName": "North Province Clinical Lab",
+      "segment": "clinical-laboratory",
+      "organization": "North Province Health Center"
+    },
+    {
+      "id": 3,
+      "code": "RPT-003",
+      "title": "Pharmacy Cold Chain Report",
+      "equipmentId": "SEN-PHM-001",
+      "equipmentName": "Vaccine Fridge Temperature",
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-19",
+      "format": "pdf",
+      "status": "generated",
+      "createdAt": "2026-06-13T09:00:00.000Z",
+      "downloadUrl": "#",
+      "ownerUserId": 6,
+      "ownerName": "Rosa Fernandez",
+      "assignedUserIds": [
+        13
+      ],
+      "facilityId": "FAC-PHM-001",
+      "facilityName": "San Gabriel Hospital Pharmacy",
+      "segment": "hospital-pharmacy",
+      "organization": "San Gabriel Hospital"
+    },
+    {
+      "id": 4,
+      "code": "RPT-004",
+      "title": "Insulin Storage Humidity Evidence",
+      "equipmentId": "SEN-PHM-002",
+      "equipmentName": "Insulin Storage Humidity",
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-19",
+      "format": "csv",
+      "status": "pending",
+      "createdAt": "2026-06-14T09:00:00.000Z",
+      "downloadUrl": "#",
+      "ownerUserId": 6,
+      "ownerName": "Rosa Fernandez",
+      "assignedUserIds": [
+        11,
+        13
+      ],
+      "facilityId": "FAC-PHM-001",
+      "facilityName": "San Gabriel Hospital Pharmacy",
+      "segment": "hospital-pharmacy",
+      "organization": "San Gabriel Hospital"
+    },
+    {
+      "id": 5,
+      "code": "RPT-005",
+      "title": "Billing Usage Summary",
+      "equipmentId": "SUB-001",
+      "equipmentName": "Professional Monitoring",
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-19",
+      "format": "pdf",
+      "status": "generated",
+      "createdAt": "2026-06-15T09:00:00.000Z",
+      "downloadUrl": "#",
+      "ownerUserId": 16,
+      "ownerName": "Lucia Ramirez",
+      "assignedUserIds": [
+        16
+      ],
+      "facilityId": "FAC-CLN-001",
+      "facilityName": "Central Clinical Laboratory",
+      "segment": "shared",
+      "organization": "Andes Clinical Network"
+    }
+  ],
+  "historicalData": [
+    {
+      "id": 1,
+      "equipmentId": "SEN-CLN-001",
+      "equipmentName": "Reagent Freezer Temperature",
+      "location": "Central Clinical Laboratory",
+      "temperature": 4.2,
+      "humidity": null,
+      "recordedAt": "2026-06-19T01:00:00.000Z",
+      "ownerUserId": 4,
+      "ownerName": "Carlos Mendoza",
+      "assignedUserIds": [
+        7,
+        12,
+        14
+      ],
+      "facilityId": "FAC-CLN-001",
+      "facilityName": "Central Clinical Laboratory",
+      "segment": "clinical-laboratory",
+      "organization": "Andes Clinical Network"
+    },
+    {
+      "id": 2,
+      "equipmentId": "SEN-CLN-001",
+      "equipmentName": "Reagent Freezer Temperature",
+      "location": "Central Clinical Laboratory",
+      "temperature": 4.2,
+      "humidity": null,
+      "recordedAt": "2026-06-19T02:00:00.000Z",
+      "ownerUserId": 4,
+      "ownerName": "Carlos Mendoza",
+      "assignedUserIds": [
+        7,
+        12,
+        14
+      ],
+      "facilityId": "FAC-CLN-001",
+      "facilityName": "Central Clinical Laboratory",
+      "segment": "clinical-laboratory",
+      "organization": "Andes Clinical Network"
+    },
+    {
+      "id": 3,
+      "equipmentId": "SEN-CLN-002",
+      "equipmentName": "Hematology Room Humidity",
+      "location": "Central Clinical Laboratory",
+      "temperature": null,
+      "humidity": 46,
+      "recordedAt": "2026-06-19T01:00:00.000Z",
+      "ownerUserId": 4,
+      "ownerName": "Carlos Mendoza",
+      "assignedUserIds": [
+        8,
+        12
+      ],
+      "facilityId": "FAC-CLN-001",
+      "facilityName": "Central Clinical Laboratory",
+      "segment": "clinical-laboratory",
+      "organization": "Andes Clinical Network"
+    },
+    {
+      "id": 4,
+      "equipmentId": "SEN-CLN-002",
+      "equipmentName": "Hematology Room Humidity",
+      "location": "Central Clinical Laboratory",
+      "temperature": null,
+      "humidity": 46,
+      "recordedAt": "2026-06-19T02:00:00.000Z",
+      "ownerUserId": 4,
+      "ownerName": "Carlos Mendoza",
+      "assignedUserIds": [
+        8,
+        12
+      ],
+      "facilityId": "FAC-CLN-001",
+      "facilityName": "Central Clinical Laboratory",
+      "segment": "clinical-laboratory",
+      "organization": "Andes Clinical Network"
+    },
+    {
+      "id": 5,
+      "equipmentId": "SEN-CLN-003",
+      "equipmentName": "PCR Freezer Temperature",
+      "location": "Central Clinical Laboratory",
+      "temperature": 9.1,
+      "humidity": null,
+      "recordedAt": "2026-06-19T01:00:00.000Z",
+      "ownerUserId": 4,
+      "ownerName": "Carlos Mendoza",
+      "assignedUserIds": [
+        7,
+        14
+      ],
+      "facilityId": "FAC-CLN-001",
+      "facilityName": "Central Clinical Laboratory",
+      "segment": "clinical-laboratory",
+      "organization": "Andes Clinical Network"
+    },
+    {
+      "id": 6,
+      "equipmentId": "SEN-CLN-003",
+      "equipmentName": "PCR Freezer Temperature",
+      "location": "Central Clinical Laboratory",
+      "temperature": 9.1,
+      "humidity": null,
+      "recordedAt": "2026-06-19T02:00:00.000Z",
+      "ownerUserId": 4,
+      "ownerName": "Carlos Mendoza",
+      "assignedUserIds": [
+        7,
+        14
+      ],
+      "facilityId": "FAC-CLN-001",
+      "facilityName": "Central Clinical Laboratory",
+      "segment": "clinical-laboratory",
+      "organization": "Andes Clinical Network"
+    },
+    {
+      "id": 7,
+      "equipmentId": "SEN-CLN-004",
+      "equipmentName": "Sample Storage Door",
+      "location": "Central Clinical Laboratory",
+      "temperature": null,
+      "humidity": null,
+      "recordedAt": "2026-06-19T01:00:00.000Z",
+      "ownerUserId": 4,
+      "ownerName": "Carlos Mendoza",
+      "assignedUserIds": [
+        8,
+        14
+      ],
+      "facilityId": "FAC-CLN-001",
+      "facilityName": "Central Clinical Laboratory",
+      "segment": "clinical-laboratory",
+      "organization": "Andes Clinical Network"
+    },
+    {
+      "id": 8,
+      "equipmentId": "SEN-CLN-004",
+      "equipmentName": "Sample Storage Door",
+      "location": "Central Clinical Laboratory",
+      "temperature": null,
+      "humidity": null,
+      "recordedAt": "2026-06-19T02:00:00.000Z",
+      "ownerUserId": 4,
+      "ownerName": "Carlos Mendoza",
+      "assignedUserIds": [
+        8,
+        14
+      ],
+      "facilityId": "FAC-CLN-001",
+      "facilityName": "Central Clinical Laboratory",
+      "segment": "clinical-laboratory",
+      "organization": "Andes Clinical Network"
+    },
+    {
+      "id": 9,
+      "equipmentId": "SEN-CLN-005",
+      "equipmentName": "North Lab Reagent Refrigerator",
+      "location": "North Province Clinical Lab",
+      "temperature": 3.7,
+      "humidity": null,
+      "recordedAt": "2026-06-19T01:00:00.000Z",
+      "ownerUserId": 5,
+      "ownerName": "Patricia Rivas",
+      "assignedUserIds": [
+        9
+      ],
+      "facilityId": "FAC-CLN-002",
+      "facilityName": "North Province Clinical Lab",
+      "segment": "clinical-laboratory",
+      "organization": "North Province Health Center"
+    },
+    {
+      "id": 10,
+      "equipmentId": "SEN-CLN-005",
+      "equipmentName": "North Lab Reagent Refrigerator",
+      "location": "North Province Clinical Lab",
+      "temperature": 3.7,
+      "humidity": null,
+      "recordedAt": "2026-06-19T02:00:00.000Z",
+      "ownerUserId": 5,
+      "ownerName": "Patricia Rivas",
+      "assignedUserIds": [
+        9
+      ],
+      "facilityId": "FAC-CLN-002",
+      "facilityName": "North Province Clinical Lab",
+      "segment": "clinical-laboratory",
+      "organization": "North Province Health Center"
+    },
+    {
+      "id": 11,
+      "equipmentId": "SEN-CLN-006",
+      "equipmentName": "North Incubator Vibration",
+      "location": "North Province Clinical Lab",
+      "temperature": null,
+      "humidity": null,
+      "recordedAt": "2026-06-19T01:00:00.000Z",
+      "ownerUserId": 5,
+      "ownerName": "Patricia Rivas",
+      "assignedUserIds": [
+        9,
+        14
+      ],
+      "facilityId": "FAC-CLN-002",
+      "facilityName": "North Province Clinical Lab",
+      "segment": "clinical-laboratory",
+      "organization": "North Province Health Center"
+    },
+    {
+      "id": 12,
+      "equipmentId": "SEN-CLN-006",
+      "equipmentName": "North Incubator Vibration",
+      "location": "North Province Clinical Lab",
+      "temperature": null,
+      "humidity": null,
+      "recordedAt": "2026-06-19T02:00:00.000Z",
+      "ownerUserId": 5,
+      "ownerName": "Patricia Rivas",
+      "assignedUserIds": [
+        9,
+        14
+      ],
+      "facilityId": "FAC-CLN-002",
+      "facilityName": "North Province Clinical Lab",
+      "segment": "clinical-laboratory",
+      "organization": "North Province Health Center"
+    },
+    {
+      "id": 13,
+      "equipmentId": "SEN-PHM-001",
+      "equipmentName": "Vaccine Fridge Temperature",
+      "location": "San Gabriel Hospital Pharmacy",
+      "temperature": 5.1,
+      "humidity": null,
+      "recordedAt": "2026-06-19T01:00:00.000Z",
+      "ownerUserId": 6,
+      "ownerName": "Rosa Fernandez",
+      "assignedUserIds": [
+        10,
+        13,
+        15
+      ],
+      "facilityId": "FAC-PHM-001",
+      "facilityName": "San Gabriel Hospital Pharmacy",
+      "segment": "hospital-pharmacy",
+      "organization": "San Gabriel Hospital"
+    },
+    {
+      "id": 14,
+      "equipmentId": "SEN-PHM-001",
+      "equipmentName": "Vaccine Fridge Temperature",
+      "location": "San Gabriel Hospital Pharmacy",
+      "temperature": 5.1,
+      "humidity": null,
+      "recordedAt": "2026-06-19T02:00:00.000Z",
+      "ownerUserId": 6,
+      "ownerName": "Rosa Fernandez",
+      "assignedUserIds": [
+        10,
+        13,
+        15
+      ],
+      "facilityId": "FAC-PHM-001",
+      "facilityName": "San Gabriel Hospital Pharmacy",
+      "segment": "hospital-pharmacy",
+      "organization": "San Gabriel Hospital"
+    },
+    {
+      "id": 15,
+      "equipmentId": "SEN-PHM-002",
+      "equipmentName": "Insulin Storage Humidity",
+      "location": "San Gabriel Hospital Pharmacy",
+      "temperature": null,
+      "humidity": 64,
+      "recordedAt": "2026-06-19T01:00:00.000Z",
+      "ownerUserId": 6,
+      "ownerName": "Rosa Fernandez",
+      "assignedUserIds": [
+        11,
+        13
+      ],
+      "facilityId": "FAC-PHM-001",
+      "facilityName": "San Gabriel Hospital Pharmacy",
+      "segment": "hospital-pharmacy",
+      "organization": "San Gabriel Hospital"
+    },
+    {
+      "id": 16,
+      "equipmentId": "SEN-PHM-002",
+      "equipmentName": "Insulin Storage Humidity",
+      "location": "San Gabriel Hospital Pharmacy",
+      "temperature": null,
+      "humidity": 64,
+      "recordedAt": "2026-06-19T02:00:00.000Z",
+      "ownerUserId": 6,
+      "ownerName": "Rosa Fernandez",
+      "assignedUserIds": [
+        11,
+        13
+      ],
+      "facilityId": "FAC-PHM-001",
+      "facilityName": "San Gabriel Hospital Pharmacy",
+      "segment": "hospital-pharmacy",
+      "organization": "San Gabriel Hospital"
+    },
+    {
+      "id": 17,
+      "equipmentId": "SEN-PHM-003",
+      "equipmentName": "Controlled Drugs Cabinet Door",
+      "location": "San Gabriel Hospital Pharmacy",
+      "temperature": null,
+      "humidity": null,
+      "recordedAt": "2026-06-19T01:00:00.000Z",
+      "ownerUserId": 6,
+      "ownerName": "Rosa Fernandez",
+      "assignedUserIds": [
+        10,
+        15
+      ],
+      "facilityId": "FAC-PHM-001",
+      "facilityName": "San Gabriel Hospital Pharmacy",
+      "segment": "hospital-pharmacy",
+      "organization": "San Gabriel Hospital"
+    },
+    {
+      "id": 18,
+      "equipmentId": "SEN-PHM-003",
+      "equipmentName": "Controlled Drugs Cabinet Door",
+      "location": "San Gabriel Hospital Pharmacy",
+      "temperature": null,
+      "humidity": null,
+      "recordedAt": "2026-06-19T02:00:00.000Z",
+      "ownerUserId": 6,
+      "ownerName": "Rosa Fernandez",
+      "assignedUserIds": [
+        10,
+        15
+      ],
+      "facilityId": "FAC-PHM-001",
+      "facilityName": "San Gabriel Hospital Pharmacy",
+      "segment": "hospital-pharmacy",
+      "organization": "San Gabriel Hospital"
+    },
+    {
+      "id": 19,
+      "equipmentId": "SEN-PHM-004",
+      "equipmentName": "Cold Room Energy Meter",
+      "location": "San Gabriel Hospital Pharmacy",
+      "temperature": null,
+      "humidity": null,
+      "recordedAt": "2026-06-19T01:00:00.000Z",
+      "ownerUserId": 6,
+      "ownerName": "Rosa Fernandez",
+      "assignedUserIds": [
+        11,
+        15
+      ],
+      "facilityId": "FAC-PHM-001",
+      "facilityName": "San Gabriel Hospital Pharmacy",
+      "segment": "hospital-pharmacy",
+      "organization": "San Gabriel Hospital"
+    },
+    {
+      "id": 20,
+      "equipmentId": "SEN-PHM-004",
+      "equipmentName": "Cold Room Energy Meter",
+      "location": "San Gabriel Hospital Pharmacy",
+      "temperature": null,
+      "humidity": null,
+      "recordedAt": "2026-06-19T02:00:00.000Z",
+      "ownerUserId": 6,
+      "ownerName": "Rosa Fernandez",
+      "assignedUserIds": [
+        11,
+        15
+      ],
+      "facilityId": "FAC-PHM-001",
+      "facilityName": "San Gabriel Hospital Pharmacy",
+      "segment": "hospital-pharmacy",
+      "organization": "San Gabriel Hospital"
+    }
+  ],
+  "incidents": [
+    {
+      "id": 1,
+      "code": "INC-001",
+      "title": "PCR freezer deviation",
+      "description": "Temperature deviation requires quarantine validation.",
+      "severity": "critical",
+      "status": "open",
+      "sourceAlertId": 1,
+      "sourceAlertTitle": "Freezer out of range",
+      "relatedSensorCode": "SEN-CLN-003",
+      "relatedAssetName": "PCR Reagent Rack",
+      "assignedTo": "Carlos Mendoza",
+      "affectedArea": "Central Lab - PCR Room",
+      "priority": "high",
+      "dueDate": "2026-06-20",
+      "correctiveAction": "Review conditions and attach evidence.",
+      "resolutionNotes": "",
+      "evidenceCount": 1,
+      "createdAt": "2026-06-19T07:00:00.000Z",
+      "updatedAt": "2026-06-19T09:00:00.000Z",
+      "timeline": [
+        {
+          "id": 1,
+          "label": "Incident created",
+          "createdAt": "2026-06-19T07:00:00.000Z"
+        }
+      ],
+      "ownerUserId": 4,
+      "ownerName": "Carlos Mendoza",
+      "assignedUserIds": [
+        7,
+        14
+      ],
+      "facilityId": "FAC-CLN-001",
+      "facilityName": "Central Clinical Laboratory",
+      "segment": "clinical-laboratory",
+      "organization": "Andes Clinical Network"
+    },
+    {
+      "id": 2,
+      "code": "INC-002",
+      "title": "Insulin humidity deviation",
+      "description": "Humidity issue detected in insulin storage.",
+      "severity": "warning",
+      "status": "investigating",
+      "sourceAlertId": 2,
+      "sourceAlertTitle": "Humidity deviation",
+      "relatedSensorCode": "SEN-PHM-002",
+      "relatedAssetName": "Insulin Batch IN-44",
+      "assignedTo": "Rosa Fernandez",
+      "affectedArea": "Hospital Pharmacy - Insulin",
+      "priority": "medium",
+      "dueDate": "2026-06-21",
+      "correctiveAction": "Review conditions and attach evidence.",
+      "resolutionNotes": "",
+      "evidenceCount": 2,
+      "createdAt": "2026-06-19T07:00:00.000Z",
+      "updatedAt": "2026-06-19T09:00:00.000Z",
+      "timeline": [
+        {
+          "id": 1,
+          "label": "Incident created",
+          "createdAt": "2026-06-19T07:00:00.000Z"
+        }
+      ],
+      "ownerUserId": 6,
+      "ownerName": "Rosa Fernandez",
+      "assignedUserIds": [
+        11,
+        13
+      ],
+      "facilityId": "FAC-PHM-001",
+      "facilityName": "San Gabriel Hospital Pharmacy",
+      "segment": "hospital-pharmacy",
+      "organization": "San Gabriel Hospital"
+    },
+    {
+      "id": 3,
+      "code": "INC-003",
+      "title": "Cabinet access anomaly",
+      "description": "Controlled drugs cabinet door requires audit.",
+      "severity": "critical",
+      "status": "investigating",
+      "sourceAlertId": 3,
+      "sourceAlertTitle": "Cabinet door open",
+      "relatedSensorCode": "SEN-PHM-003",
+      "relatedAssetName": "Controlled Drugs Cabinet",
+      "assignedTo": "Gabriel Paredes",
+      "affectedArea": "Hospital Pharmacy - Restricted Area",
+      "priority": "high",
+      "dueDate": "2026-06-20",
+      "correctiveAction": "Review conditions and attach evidence.",
+      "resolutionNotes": "",
+      "evidenceCount": 2,
+      "createdAt": "2026-06-19T07:00:00.000Z",
+      "updatedAt": "2026-06-19T09:00:00.000Z",
+      "timeline": [
+        {
+          "id": 1,
+          "label": "Incident created",
+          "createdAt": "2026-06-19T07:00:00.000Z"
+        }
+      ],
+      "ownerUserId": 6,
+      "ownerName": "Rosa Fernandez",
+      "assignedUserIds": [
+        10,
+        15
+      ],
+      "facilityId": "FAC-PHM-001",
+      "facilityName": "San Gabriel Hospital Pharmacy",
+      "segment": "hospital-pharmacy",
+      "organization": "San Gabriel Hospital"
+    },
+    {
+      "id": 4,
+      "code": "INC-004",
+      "title": "North incubator maintenance",
+      "description": "Vibration values require inspection.",
+      "severity": "warning",
+      "status": "open",
+      "sourceAlertId": 4,
+      "sourceAlertTitle": "Incubator vibration warning",
+      "relatedSensorCode": "SEN-CLN-006",
+      "relatedAssetName": "North Incubator",
+      "assignedTo": "Patricia Rivas",
+      "affectedArea": "North Lab - Culture Room",
+      "priority": "medium",
+      "dueDate": "2026-06-22",
+      "correctiveAction": "Review conditions and attach evidence.",
+      "resolutionNotes": "",
+      "evidenceCount": 1,
+      "createdAt": "2026-06-19T07:00:00.000Z",
+      "updatedAt": "2026-06-19T09:00:00.000Z",
+      "timeline": [
+        {
+          "id": 1,
+          "label": "Incident created",
+          "createdAt": "2026-06-19T07:00:00.000Z"
+        }
+      ],
+      "ownerUserId": 5,
+      "ownerName": "Patricia Rivas",
+      "assignedUserIds": [
+        9,
+        14
+      ],
+      "facilityId": "FAC-CLN-002",
+      "facilityName": "North Province Clinical Lab",
+      "segment": "clinical-laboratory",
+      "organization": "North Province Health Center"
+    },
+    {
+      "id": 5,
+      "code": "INC-005",
+      "title": "Hematology humidity follow-up",
+      "description": "Humidity control needs additional evidence.",
+      "severity": "info",
+      "status": "resolved",
+      "sourceAlertId": 6,
+      "sourceAlertTitle": "Hematology humidity reviewed",
+      "relatedSensorCode": "SEN-CLN-002",
+      "relatedAssetName": "Hematology Analyzer Reagents",
+      "assignedTo": "Elena Castillo",
+      "affectedArea": "Central Lab - Hematology",
+      "priority": "low",
+      "dueDate": "2026-06-19",
+      "correctiveAction": "Review conditions and attach evidence.",
+      "resolutionNotes": "",
+      "evidenceCount": 2,
+      "createdAt": "2026-06-19T07:00:00.000Z",
+      "updatedAt": "2026-06-19T09:00:00.000Z",
+      "timeline": [
+        {
+          "id": 1,
+          "label": "Incident created",
+          "createdAt": "2026-06-19T07:00:00.000Z"
+        }
+      ],
+      "ownerUserId": 4,
+      "ownerName": "Carlos Mendoza",
+      "assignedUserIds": [
+        8,
+        12
+      ],
+      "facilityId": "FAC-CLN-001",
+      "facilityName": "Central Clinical Laboratory",
+      "segment": "clinical-laboratory",
+      "organization": "Andes Clinical Network"
+    }
+  ],
+  "auditTraceability": {
+    "summary": {
+      "totalEvents": 18,
+      "criticalEvents": 3,
+      "evidenceReady": 12,
+      "traceabilityScore": 94
+    },
+    "traceabilityHealth": {
+      "auditCoverage": 98,
+      "evidenceCoverage": 94,
+      "changeIntegrity": 99,
+      "remoteCommandTraceability": 97
+    },
+    "auditLogs": [
+      {
+        "id": "AUD-1208",
+        "actor": "Dr. Maria Lopez",
+        "action": "Reviewed compliance evidence",
+        "module": "Compliance Traceability",
+        "severity": "info",
+        "status": "reviewed",
+        "ipAddress": "192.168.1.24",
+        "createdAt": "2026-05-13 09:45",
+        "evidenceId": "EVD-442"
+      },
+      {
+        "id": "AUD-1207",
+        "actor": "System",
+        "action": "Registered temperature threshold event",
+        "module": "Sensor History",
+        "severity": "warning",
+        "status": "pending",
+        "ipAddress": "10.0.0.12",
+        "createdAt": "2026-05-13 09:12",
+        "evidenceId": "EVD-441"
+      },
+      {
+        "id": "AUD-1206",
+        "actor": "Lab Technician",
+        "action": "Executed remote cooling adjustment",
+        "module": "Remote Command History",
+        "severity": "critical",
+        "status": "reviewed",
+        "ipAddress": "192.168.1.41",
+        "createdAt": "2026-05-13 08:54",
+        "evidenceId": "EVD-440"
+      },
+      {
+        "id": "AUD-1205",
+        "actor": "Compliance Officer",
+        "action": "Approved incident closure evidence",
+        "module": "Incident History",
+        "severity": "info",
+        "status": "reviewed",
+        "ipAddress": "192.168.1.18",
+        "createdAt": "2026-05-12 18:20",
+        "evidenceId": "EVD-439"
+      },
+      {
+        "id": "AUD-1204",
+        "actor": "SafeLab Administrator",
+        "action": "Updated user permission set",
+        "module": "Change History",
+        "severity": "warning",
+        "status": "pending",
+        "ipAddress": "192.168.1.10",
+        "createdAt": "2026-05-12 17:36",
+        "evidenceId": "EVD-438"
+      }
+    ],
+    "timeline": [
+      {
+        "id": 1,
+        "time": "09:45",
+        "title": "Compliance evidence reviewed",
+        "module": "Compliance",
+        "status": "reviewed"
+      },
+      {
+        "id": 2,
+        "time": "09:12",
+        "title": "Sensor threshold event recorded",
+        "module": "Sensors",
+        "status": "pending"
+      },
+      {
+        "id": 3,
+        "time": "08:54",
+        "title": "Remote command execution traced",
+        "module": "Remote Control",
+        "status": "reviewed"
+      },
+      {
+        "id": 4,
+        "time": "07:35",
+        "title": "Asset status change appended",
+        "module": "Assets",
+        "status": "reviewed"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "EVD-442",
+        "type": "Compliance report",
+        "owner": "Compliance Officer",
+        "linkedRecord": "CMP-087",
+        "status": "ready"
+      },
+      {
+        "id": "EVD-441",
+        "type": "Sensor reading snapshot",
+        "owner": "System",
+        "linkedRecord": "SNS-204",
+        "status": "pending"
+      },
+      {
+        "id": "EVD-440",
+        "type": "Command execution receipt",
+        "owner": "Lab Technician",
+        "linkedRecord": "CMD-081",
+        "status": "ready"
+      },
+      {
+        "id": "EVD-439",
+        "type": "Incident closure note",
+        "owner": "Operations Team",
+        "linkedRecord": "INC-025",
+        "status": "ready"
+      }
+    ],
+    "trackedEntities": [
+      {
+        "labelKey": "audit.tracked.assets",
+        "value": 156,
+        "icon": "pi pi-box",
+        "trend": "+12"
+      },
+      {
+        "labelKey": "audit.tracked.sensors",
+        "value": 24,
+        "icon": "pi pi-wifi",
+        "trend": "+4"
+      },
+      {
+        "labelKey": "audit.tracked.incidents",
+        "value": 31,
+        "icon": "pi pi-exclamation-triangle",
+        "trend": "+3"
+      },
+      {
+        "labelKey": "audit.tracked.commands",
+        "value": 18,
+        "icon": "pi pi-sliders-h",
+        "trend": "+2"
+      }
+    ],
+    "changeHistory": [
+      {
+        "id": "CHG-088",
+        "object": "Threshold rule",
+        "description": "Temperature range adjusted for Cold Room A",
+        "changedBy": "Compliance Officer",
+        "risk": "medium"
+      },
+      {
+        "id": "CHG-087",
+        "object": "User role",
+        "description": "Supervisor permissions updated",
+        "changedBy": "SafeLab Administrator",
+        "risk": "medium"
+      },
+      {
+        "id": "CHG-086",
+        "object": "Sensor assignment",
+        "description": "Sensor T-204 linked to Clinical Lab 2",
+        "changedBy": "Lab Technician",
+        "risk": "low"
+      }
+    ],
+    "commandHistory": [
+      {
+        "id": "CMD-081",
+        "command": "Adjust cooling level",
+        "actuator": "Cold Chamber A-01",
+        "requestedBy": "Lab Technician",
+        "result": "confirmed"
+      },
+      {
+        "id": "CMD-080",
+        "command": "Restart sensor gateway",
+        "actuator": "Gateway S-02",
+        "requestedBy": "SafeLab Administrator",
+        "result": "confirmed"
+      },
+      {
+        "id": "CMD-079",
+        "command": "Cancel pending actuator command",
+        "actuator": "Freezer B-02",
+        "requestedBy": "Dr. Maria Lopez",
+        "result": "cancelled"
+      }
+    ]
+  },
+  "subscriptions": [
+    {
+      "id": 1,
+      "currentPlanId": 2,
+      "planName": "Professional Monitoring",
+      "status": "active",
+      "renewalDate": "2026-07-01",
+      "monthlyCost": 99,
+      "billingCycle": "monthly",
+      "devicesUsed": 10,
+      "devicesLimit": 35,
+      "latestInvoiceId": "INV-2026-001",
+      "customerName": "SafeLab Central",
+      "updatedAt": "2026-06-19T09:00:00.000Z"
+    }
+  ],
+  "invoices": [
+    {
+      "id": 1,
+      "code": "INV-2026-001",
+      "description": "Professional Monitoring subscription",
+      "period": "2026-06-01 - 2026-06-30",
+      "amount": 99,
+      "status": "paid",
+      "dueDate": "2026-06-05",
+      "createdAt": "2026-06-01T08:00:00.000Z",
+      "downloadUrl": "#"
+    },
+    {
+      "id": 2,
+      "code": "INV-2026-002",
+      "description": "Professional Monitoring subscription",
+      "period": "2026-07-01 - 2026-07-31",
+      "amount": 99,
+      "status": "pending",
+      "dueDate": "2026-07-05",
+      "createdAt": "2026-07-01T08:00:00.000Z",
+      "downloadUrl": "#"
+    },
+    {
+      "id": 3,
+      "code": "INV-2026-003",
+      "description": "Additional device usage adjustment",
+      "period": "2026-06-10 - 2026-06-19",
+      "amount": 15,
+      "status": "paid",
+      "dueDate": "2026-06-20",
+      "createdAt": "2026-06-19T09:00:00.000Z",
+      "downloadUrl": "#"
+    }
+  ],
+  "payments": [
+    {
+      "id": 1,
+      "code": "PAY-2026-001",
+      "method": "Visa ending 4242",
+      "amount": 99,
+      "status": "completed",
+      "paidAt": "2026-06-02 10:30",
+      "invoiceCode": "INV-2026-001"
+    },
+    {
+      "id": 2,
+      "code": "PAY-2026-002",
+      "method": "Visa ending 4242",
+      "amount": 15,
+      "status": "completed",
+      "paidAt": "2026-06-19 09:40",
+      "invoiceCode": "INV-2026-003"
+    }
+  ],
+  "usageLimits": [
+    {
+      "id": 1,
+      "devicesUsed": 9,
+      "devicesLimit": 35,
+      "sensorsUsed": 10,
+      "sensorsLimit": 75,
+      "reportsGenerated": 5,
+      "reportsLimit": 35,
+      "alertsCreated": 6,
+      "alertsLimit": 150
+    }
+  ],
+  "userProfiles": [
+    {
+      "id": 1,
+      "accountId": 1,
+      "userId": "USR-001",
+      "firstName": "Maria",
+      "lastName": "Lopez",
+      "fullName": "Dr. Maria Lopez",
+      "initials": "ML",
+      "email": "admin@safelab.com",
+      "phone": "+51 901 555 101",
+      "role": "safeLabAdministrator",
+      "status": "active",
+      "position": "SafeLab Administrator",
+      "segment": "platform",
+      "organization": "SafeLab Central",
+      "laboratory": "SafeLab Platform",
+      "facilityId": "FAC-PLATFORM",
+      "facilityName": "SafeLab Platform",
+      "language": "en",
+      "timezone": "America/Lima",
+      "notificationPreference": "critical-and-daily",
+      "lastAccess": "2026-06-19T09:15:00.000Z",
+      "lastPasswordChange": "2026-06-01T08:30:00.000Z",
+      "updatedAt": "2026-06-19T09:15:00.000Z"
+    },
+    {
+      "id": 2,
+      "accountId": 2,
+      "userId": "USR-002",
+      "firstName": "Jorge",
+      "lastName": "Alvarez",
+      "fullName": "Jorge Alvarez",
+      "initials": "JA",
+      "email": "admin.ops@safelab.com",
+      "phone": "+51 902 555 102",
+      "role": "safeLabAdministrator",
+      "status": "active",
+      "position": "SafeLab Administrator",
+      "segment": "platform",
+      "organization": "SafeLab Central",
+      "laboratory": "SafeLab Platform",
+      "facilityId": "FAC-PLATFORM",
+      "facilityName": "SafeLab Platform",
+      "language": "en",
+      "timezone": "America/Lima",
+      "notificationPreference": "critical-and-daily",
+      "lastAccess": "2026-06-19T09:15:00.000Z",
+      "lastPasswordChange": "2026-06-01T08:30:00.000Z",
+      "updatedAt": "2026-06-19T09:15:00.000Z"
+    },
+    {
+      "id": 3,
+      "accountId": 3,
+      "userId": "USR-003",
+      "firstName": "Valeria",
+      "lastName": "Santos",
+      "fullName": "Valeria Santos",
+      "initials": "VS",
+      "email": "admin.audit@safelab.com",
+      "phone": "+51 903 555 103",
+      "role": "safeLabAdministrator",
+      "status": "active",
+      "position": "SafeLab Administrator",
+      "segment": "platform",
+      "organization": "SafeLab Central",
+      "laboratory": "SafeLab Platform",
+      "facilityId": "FAC-PLATFORM",
+      "facilityName": "SafeLab Platform",
+      "language": "en",
+      "timezone": "America/Lima",
+      "notificationPreference": "critical-and-daily",
+      "lastAccess": "2026-06-19T09:15:00.000Z",
+      "lastPasswordChange": "2026-06-01T08:30:00.000Z",
+      "updatedAt": "2026-06-19T09:15:00.000Z"
+    },
+    {
+      "id": 4,
+      "accountId": 4,
+      "userId": "USR-004",
+      "firstName": "Carlos",
+      "lastName": "Mendoza",
+      "fullName": "Carlos Mendoza",
+      "initials": "CM",
+      "email": "coordinator@safelab.com",
+      "phone": "+51 904 555 104",
+      "role": "bioclinicalCoordinator",
+      "status": "active",
+      "position": "Bioclinical Operations Coordinator",
+      "segment": "clinical-laboratory",
+      "organization": "Andes Clinical Network",
+      "laboratory": "Central Clinical Laboratory",
+      "facilityId": "FAC-CLN-001",
+      "facilityName": "Central Clinical Laboratory",
+      "language": "en",
+      "timezone": "America/Lima",
+      "notificationPreference": "critical-and-daily",
+      "lastAccess": "2026-06-19T09:15:00.000Z",
+      "lastPasswordChange": "2026-06-01T08:30:00.000Z",
+      "updatedAt": "2026-06-19T09:15:00.000Z"
+    },
+    {
+      "id": 5,
+      "accountId": 5,
+      "userId": "USR-005",
+      "firstName": "Patricia",
+      "lastName": "Rivas",
+      "fullName": "Patricia Rivas",
+      "initials": "PR",
+      "email": "coordinator.north@safelab.com",
+      "phone": "+51 905 555 105",
+      "role": "bioclinicalCoordinator",
+      "status": "active",
+      "position": "Bioclinical Operations Coordinator",
+      "segment": "clinical-laboratory",
+      "organization": "North Province Health Center",
+      "laboratory": "North Province Clinical Lab",
+      "facilityId": "FAC-CLN-002",
+      "facilityName": "North Province Clinical Lab",
+      "language": "en",
+      "timezone": "America/Lima",
+      "notificationPreference": "critical-and-daily",
+      "lastAccess": "2026-06-19T09:15:00.000Z",
+      "lastPasswordChange": "2026-06-01T08:30:00.000Z",
+      "updatedAt": "2026-06-19T09:15:00.000Z"
+    },
+    {
+      "id": 6,
+      "accountId": 6,
+      "userId": "USR-006",
+      "firstName": "Rosa",
+      "lastName": "Fernandez",
+      "fullName": "Rosa Fernandez",
+      "initials": "RF",
+      "email": "pharmacy.coordinator@safelab.com",
+      "phone": "+51 906 555 106",
+      "role": "hospitalPharmacyCoordinator",
+      "status": "active",
+      "position": "Hospital Pharmacy Coordinator",
+      "segment": "hospital-pharmacy",
+      "organization": "San Gabriel Hospital",
+      "laboratory": "San Gabriel Hospital Pharmacy",
+      "facilityId": "FAC-PHM-001",
+      "facilityName": "San Gabriel Hospital Pharmacy",
+      "language": "en",
+      "timezone": "America/Lima",
+      "notificationPreference": "critical-and-daily",
+      "lastAccess": "2026-06-19T09:15:00.000Z",
+      "lastPasswordChange": "2026-06-01T08:30:00.000Z",
+      "updatedAt": "2026-06-19T09:15:00.000Z"
+    },
+    {
+      "id": 7,
+      "accountId": 7,
+      "userId": "USR-007",
+      "firstName": "Luis",
+      "lastName": "Herrera",
+      "fullName": "Luis Herrera",
+      "initials": "LH",
+      "email": "lab.tech1@safelab.com",
+      "phone": "+51 907 555 107",
+      "role": "labTechnician",
+      "status": "active",
+      "position": "Laboratory Technician",
+      "segment": "clinical-laboratory",
+      "organization": "Andes Clinical Network",
+      "laboratory": "Central Clinical Laboratory",
+      "facilityId": "FAC-CLN-001",
+      "facilityName": "Central Clinical Laboratory",
+      "language": "en",
+      "timezone": "America/Lima",
+      "notificationPreference": "critical-and-daily",
+      "lastAccess": "2026-06-19T09:15:00.000Z",
+      "lastPasswordChange": "2026-06-01T08:30:00.000Z",
+      "updatedAt": "2026-06-19T09:15:00.000Z"
+    },
+    {
+      "id": 8,
+      "accountId": 8,
+      "userId": "USR-008",
+      "firstName": "Diego",
+      "lastName": "Quispe",
+      "fullName": "Diego Quispe",
+      "initials": "DQ",
+      "email": "lab.tech2@safelab.com",
+      "phone": "+51 908 555 108",
+      "role": "labTechnician",
+      "status": "active",
+      "position": "Laboratory Technician",
+      "segment": "clinical-laboratory",
+      "organization": "Andes Clinical Network",
+      "laboratory": "Central Clinical Laboratory",
+      "facilityId": "FAC-CLN-001",
+      "facilityName": "Central Clinical Laboratory",
+      "language": "en",
+      "timezone": "America/Lima",
+      "notificationPreference": "critical-and-daily",
+      "lastAccess": "2026-06-19T09:15:00.000Z",
+      "lastPasswordChange": "2026-06-01T08:30:00.000Z",
+      "updatedAt": "2026-06-19T09:15:00.000Z"
+    },
+    {
+      "id": 9,
+      "accountId": 9,
+      "userId": "USR-009",
+      "firstName": "Sofia",
+      "lastName": "Vega",
+      "fullName": "Sofia Vega",
+      "initials": "SV",
+      "email": "lab.tech3@safelab.com",
+      "phone": "+51 909 555 109",
+      "role": "labTechnician",
+      "status": "active",
+      "position": "Laboratory Technician",
+      "segment": "clinical-laboratory",
+      "organization": "North Province Health Center",
+      "laboratory": "North Province Clinical Lab",
+      "facilityId": "FAC-CLN-002",
+      "facilityName": "North Province Clinical Lab",
+      "language": "en",
+      "timezone": "America/Lima",
+      "notificationPreference": "critical-and-daily",
+      "lastAccess": "2026-06-19T09:15:00.000Z",
+      "lastPasswordChange": "2026-06-01T08:30:00.000Z",
+      "updatedAt": "2026-06-19T09:15:00.000Z"
+    },
+    {
+      "id": 10,
+      "accountId": 10,
+      "userId": "USR-010",
+      "firstName": "Ana",
+      "lastName": "Torres",
+      "fullName": "Ana Torres",
+      "initials": "AT",
+      "email": "pharm.tech1@safelab.com",
+      "phone": "+51 910 555 110",
+      "role": "pharmacyTechnician",
+      "status": "active",
+      "position": "Pharmacy Technician",
+      "segment": "hospital-pharmacy",
+      "organization": "San Gabriel Hospital",
+      "laboratory": "San Gabriel Hospital Pharmacy",
+      "facilityId": "FAC-PHM-001",
+      "facilityName": "San Gabriel Hospital Pharmacy",
+      "language": "en",
+      "timezone": "America/Lima",
+      "notificationPreference": "critical-and-daily",
+      "lastAccess": "2026-06-19T09:15:00.000Z",
+      "lastPasswordChange": "2026-06-01T08:30:00.000Z",
+      "updatedAt": "2026-06-19T09:15:00.000Z"
+    },
+    {
+      "id": 11,
+      "accountId": 11,
+      "userId": "USR-011",
+      "firstName": "Marco",
+      "lastName": "Salazar",
+      "fullName": "Marco Salazar",
+      "initials": "MS",
+      "email": "pharm.tech2@safelab.com",
+      "phone": "+51 911 555 111",
+      "role": "pharmacyTechnician",
+      "status": "active",
+      "position": "Pharmacy Technician",
+      "segment": "hospital-pharmacy",
+      "organization": "San Gabriel Hospital",
+      "laboratory": "San Gabriel Hospital Pharmacy",
+      "facilityId": "FAC-PHM-001",
+      "facilityName": "San Gabriel Hospital Pharmacy",
+      "language": "en",
+      "timezone": "America/Lima",
+      "notificationPreference": "critical-and-daily",
+      "lastAccess": "2026-06-19T09:15:00.000Z",
+      "lastPasswordChange": "2026-06-01T08:30:00.000Z",
+      "updatedAt": "2026-06-19T09:15:00.000Z"
+    },
+    {
+      "id": 12,
+      "accountId": 12,
+      "userId": "USR-012",
+      "firstName": "Elena",
+      "lastName": "Castillo",
+      "fullName": "Elena Castillo",
+      "initials": "EC",
+      "email": "compliance@safelab.com",
+      "phone": "+51 912 555 112",
+      "role": "complianceOfficer",
+      "status": "active",
+      "position": "Compliance Officer",
+      "segment": "clinical-laboratory",
+      "organization": "Andes Clinical Network",
+      "laboratory": "Central Clinical Laboratory",
+      "facilityId": "FAC-CLN-001",
+      "facilityName": "Central Clinical Laboratory",
+      "language": "en",
+      "timezone": "America/Lima",
+      "notificationPreference": "critical-and-daily",
+      "lastAccess": "2026-06-19T09:15:00.000Z",
+      "lastPasswordChange": "2026-06-01T08:30:00.000Z",
+      "updatedAt": "2026-06-19T09:15:00.000Z"
+    },
+    {
+      "id": 13,
+      "accountId": 13,
+      "userId": "USR-013",
+      "firstName": "Gabriel",
+      "lastName": "Paredes",
+      "fullName": "Gabriel Paredes",
+      "initials": "GP",
+      "email": "compliance.pharma@safelab.com",
+      "phone": "+51 913 555 113",
+      "role": "complianceOfficer",
+      "status": "active",
+      "position": "Compliance Officer",
+      "segment": "hospital-pharmacy",
+      "organization": "San Gabriel Hospital",
+      "laboratory": "San Gabriel Hospital Pharmacy",
+      "facilityId": "FAC-PHM-001",
+      "facilityName": "San Gabriel Hospital Pharmacy",
+      "language": "en",
+      "timezone": "America/Lima",
+      "notificationPreference": "critical-and-daily",
+      "lastAccess": "2026-06-19T09:15:00.000Z",
+      "lastPasswordChange": "2026-06-01T08:30:00.000Z",
+      "updatedAt": "2026-06-19T09:15:00.000Z"
+    },
+    {
+      "id": 14,
+      "accountId": 14,
+      "userId": "USR-014",
+      "firstName": "Miguel",
+      "lastName": "Rojas",
+      "fullName": "Miguel Rojas",
+      "initials": "MR",
+      "email": "maintenance@safelab.com",
+      "phone": "+51 914 555 114",
+      "role": "maintenanceOperator",
+      "status": "active",
+      "position": "Maintenance Operator",
+      "segment": "clinical-laboratory",
+      "organization": "Andes Clinical Network",
+      "laboratory": "Central Clinical Laboratory",
+      "facilityId": "FAC-CLN-001",
+      "facilityName": "Central Clinical Laboratory",
+      "language": "en",
+      "timezone": "America/Lima",
+      "notificationPreference": "critical-and-daily",
+      "lastAccess": "2026-06-19T09:15:00.000Z",
+      "lastPasswordChange": "2026-06-01T08:30:00.000Z",
+      "updatedAt": "2026-06-19T09:15:00.000Z"
+    },
+    {
+      "id": 15,
+      "accountId": 15,
+      "userId": "USR-015",
+      "firstName": "Paola",
+      "lastName": "Campos",
+      "fullName": "Paola Campos",
+      "initials": "PC",
+      "email": "maintenance.pharma@safelab.com",
+      "phone": "+51 915 555 115",
+      "role": "maintenanceOperator",
+      "status": "active",
+      "position": "Maintenance Operator",
+      "segment": "hospital-pharmacy",
+      "organization": "San Gabriel Hospital",
+      "laboratory": "San Gabriel Hospital Pharmacy",
+      "facilityId": "FAC-PHM-001",
+      "facilityName": "San Gabriel Hospital Pharmacy",
+      "language": "en",
+      "timezone": "America/Lima",
+      "notificationPreference": "critical-and-daily",
+      "lastAccess": "2026-06-19T09:15:00.000Z",
+      "lastPasswordChange": "2026-06-01T08:30:00.000Z",
+      "updatedAt": "2026-06-19T09:15:00.000Z"
+    },
+    {
+      "id": 16,
+      "accountId": 16,
+      "userId": "USR-016",
+      "firstName": "Lucia",
+      "lastName": "Ramirez",
+      "fullName": "Lucia Ramirez",
+      "initials": "LR",
+      "email": "billing@safelab.com",
+      "phone": "+51 916 555 116",
+      "role": "billingManager",
+      "status": "active",
+      "position": "Billing Manager",
+      "segment": "shared",
+      "organization": "Andes Clinical Network",
+      "laboratory": "Central Clinical Laboratory",
+      "facilityId": "FAC-CLN-001",
+      "facilityName": "Central Clinical Laboratory",
+      "language": "en",
+      "timezone": "America/Lima",
+      "notificationPreference": "critical-and-daily",
+      "lastAccess": "2026-06-19T09:15:00.000Z",
+      "lastPasswordChange": "2026-06-01T08:30:00.000Z",
+      "updatedAt": "2026-06-19T09:15:00.000Z"
+    }
+  ]
+}
