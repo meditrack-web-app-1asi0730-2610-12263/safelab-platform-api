@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class OpenApiConfig {
+
     @Bean
     public OpenAPI safeLabOpenApi() {
         return new OpenAPI()
@@ -15,6 +16,11 @@ public class OpenApiConfig {
                         .title("SafeLab Platform API")
                         .description("Backend API for SafeLab Web Application bounded contexts")
                         .version("1.0.0"))
-                .addServersItem(new Server().url("http://localhost:8080").description("Local"));
+                .addServersItem(new Server()
+                        .url("https://safelab-platform-api.onrender.com")
+                        .description("Render Production"))
+                .addServersItem(new Server()
+                        .url("http://localhost:8080")
+                        .description("Local"));
     }
 }
