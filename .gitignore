@@ -1,19 +1,9 @@
-# .NET
-bin/
-obj/
-.vs/
-.idea/
-*.user
-*.suo
-*.db
-*.db-shm
-*.db-wal
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Environment
+target/
+data/
+*.log
 .env
-.env.*
-!*.env.example
+.env.local
+.env.*.local
+.idea/
+.vscode/
+.DS_Store

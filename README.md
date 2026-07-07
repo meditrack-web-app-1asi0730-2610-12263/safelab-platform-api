@@ -1,278 +1,251 @@
 # SafeLab Platform API
 
-## Project Overview
+Spring Boot backend for the SafeLab Web Application.
 
-The `SafeLab Platform API` is a backend application designed to support SafeLab's laboratory monitoring web application. It manages identity access, user profiles, assets, sensors, alerts, remote control actions, reports, incidents, audit traceability and subscription data.
+This version is prepared for **Render + PostgreSQL** and keeps the current frontend `db.json` structure as persistent JSON collections in a relational table named `stored_documents`. This lets the frontend migrate quickly from local mock data to a real backend while keeping all 12 bounded contexts connected through one API.
 
-Built with .NET and ASP.NET Core, it follows a Domain-Driven Design (DDD) inspired organization by bounded contexts and exposes RESTful endpoints documented through Swagger / OpenAPI.
+## Stack
 
-## Table of Contents
+- Java 21
+- Spring Boot 3.4
+- Spring Web
+- Spring Data JPA
+- PostgreSQL for Render
+- H2 for local quick testing
+- Swagger/OpenAPI
+- Dockerfile ready for Render
+- Seed data from `src/main/resources/db.seed.json`
 
-1. Architecture Overview
-2. Domain-Driven Design Concepts
-3. Key Features Implemented
-4. Bounded Contexts
-5. Technologies Used
-6. Getting Started
-7. MySQL Configuration
-8. Project Structure
-9. API Documentation
-10. Deployment on Render
-11. Frontend Integration
-12. License
-
-## Architecture Overview
-
-The backend is organized around bounded contexts and layered architecture:
-
-- **Domain Layer**: domain models, aggregate roots and repository contracts.
-- **Application Layer**: application services that coordinate use cases.
-- **Infrastructure Layer**: Entity Framework Core persistence and database initialization.
-- **Interfaces Layer**: REST controllers and request/response resources.
-
-This first version uses a generic JSON document persistence strategy in MySQL. This allows the API to replace the existing JSON Server quickly while preserving the frontend data shape. In the final version, these documents can be progressively replaced by strongly typed aggregates and relational tables for each bounded context.
-
-## Domain-Driven Design Concepts
-
-SafeLab is divided into independent bounded contexts:
-
-- IAM
-- User Profiles
-- Subscription & Billing
-- Dashboard & Overview
-- Asset & Inventory Monitoring
-- Sensor Monitoring
-- Environmental Compliance
-- Alerts & Notifications
-- Remote Control & Actuation
-- Reports & Analytics
-- Incident Management
-- Audit & Traceability
-- Shared
-
-Each context has its own folder and contains Application, Domain, Infrastructure and Interfaces layers.
-
-## Key Features Implemented
-
-- RESTful API with ASP.NET Core.
-- Swagger / OpenAPI documentation.
-- MySQL persistence with Entity Framework Core.
-- Seed data imported from the final SafeLab frontend `db.json`.
-- Endpoints compatible with JSON Server routes, such as `/users`, `/assets`, `/sensors`, `/alerts`.
-- Versioned API routes, such as `/api/v1/users`, `/api/v1/assets`, `/api/v1/sensors`.
-- Basic sign-in and sign-up endpoints.
-- CORS enabled for frontend integration.
-- Dockerfile and `render.yaml` for Render deployment.
-
-## Technologies Used
-
-- **.NET 10**: Core framework for the application.
-- **ASP.NET Core**: RESTful API development.
-- **C#**: Server-side programming language.
-- **Entity Framework Core**: ORM for persistence.
-- **MySQL**: Relational database.
-- **Swashbuckle.AspNetCore**: Swagger / OpenAPI documentation.
-- **Humanizer**: Utility library for naming and formatting support.
-- **Docker**: Containerized deployment.
-- **Render**: Cloud deployment platform for the backend.
-
-## Getting Started
-
-### Prerequisites
-
-- .NET 10 SDK
-- MySQL Server
-- Git
-- Rider or Visual Studio
-
-### Setup Instructions
-
-1. Clone the repository:
+## Run locally with H2
 
 ```bash
-git clone https://github.com/your-organization/safelab-platform-api.git
-cd safelab-platform-api
+mvn spring-boot:run
 ```
 
-2. Navigate to the project folder:
+Swagger:
+
+```txt
+http://localhost:8080/swagger-ui.html
+```
+
+Health check:
+
+```txt
+http://localhost:8080/actuator/health
+```
+
+## Run locally with PostgreSQL
 
 ```bash
-cd SafeLab.Platform
+SPRING_PROFILES_ACTIVE=postgres \
+SPRING_DATASOURCE_URL="jdbc:postgresql://localhost:5432/safelab_db" \
+SPRING_DATASOURCE_USERNAME="safelab_user" \
+SPRING_DATASOURCE_PASSWORD="your-password" \
+mvn spring-boot:run
 ```
 
-3. Restore NuGet packages:
+PowerShell:
 
-```bash
-dotnet restore
+```powershell
+$env:SPRING_PROFILES_ACTIVE="postgres"
+$env:SPRING_DATASOURCE_URL="jdbc:postgresql://localhost:5432/safelab_db"
+$env:SPRING_DATASOURCE_USERNAME="safelab_user"
+$env:SPRING_DATASOURCE_PASSWORD="your-password"
+mvn spring-boot:run
 ```
 
-4. Configure MySQL:
+## Deploy to Render
 
-Create a database in MySQL:
+Create a **Web Service** from the backend repository and use Docker.
 
-```sql
-CREATE DATABASE safelab_platform_dev;
+Recommended settings:
+
+```txt
+Runtime: Docker
+Region: Oregon (same as your database)
+Branch: main
+Root Directory: ./
+Health Check Path: /actuator/health
 ```
 
-Update the connection string in `SafeLab.Platform/appsettings.Development.json`:
+Environment variables in the Render Web Service:
+
+```txt
+SPRING_PROFILES_ACTIVE=postgres
+DATABASE_URL=<paste Render PostgreSQL Internal Database URL>
+CORS_ALLOWED_ORIGINS=https://safelab-frontend.vercel.app,http://localhost:5173
+SEED_RESET_ON_START=false
+JAVA_OPTS=-XX:MaxRAMPercentage=75.0
+```
+
+Use the **Internal Database URL** from your Render PostgreSQL service when the backend is also running on Render. It looks like:
+
+```txt
+postgres://safelab_user:PASSWORD@HOST:5432/safelab_db
+```
+
+The backend automatically converts Render's `postgres://...` URL into the JDBC URL required by Spring Boot.
+
+Alternative manual variables:
+
+```txt
+SPRING_PROFILES_ACTIVE=postgres
+SPRING_DATASOURCE_URL=jdbc:postgresql://HOST:5432/safelab_db?sslmode=require
+SPRING_DATASOURCE_USERNAME=safelab_user
+SPRING_DATASOURCE_PASSWORD=PASSWORD
+CORS_ALLOWED_ORIGINS=https://safelab-frontend.vercel.app,http://localhost:5173
+```
+
+## API base URL
+
+Local:
+
+```txt
+http://localhost:8080/api/v1
+```
+
+Render example:
+
+```txt
+https://safelab-platform-api.onrender.com/api/v1
+```
+
+Swagger on Render:
+
+```txt
+https://safelab-platform-api.onrender.com/swagger-ui.html
+```
+
+## Demo reset
+
+Reset all collections from seed data:
+
+```txt
+POST /api/v1/demo/reset
+```
+
+Use only for demo/testing.
+
+## Main collections
+
+Generic CRUD is available for these collections:
+
+```txt
+users
+facilities
+sensors
+assets
+complianceRules
+alerts
+notifications
+incidents
+actuators
+remoteCommands
+reports
+auditLogs
+billing
+currentUser
+```
+
+Example:
+
+```txt
+GET    /api/v1/sensors
+POST   /api/v1/sensors
+GET    /api/v1/sensors/{id}
+PATCH  /api/v1/sensors/{id}
+DELETE /api/v1/sensors/{id}
+```
+
+## Business endpoints
+
+### IAM
+
+```txt
+POST /api/v1/auth/sign-in
+POST /api/v1/auth/sign-out
+GET  /api/v1/auth/me
+```
+
+Demo credential:
 
 ```json
-"ConnectionStrings": {
-  "DefaultConnection": "server=localhost;port=3306;user=root;password=password;database=safelab_platform_dev"
+{
+  "email": "admin@safelab.pe",
+  "password": "123456"
 }
 ```
 
-5. Run the application:
+### Dashboard
 
-```bash
-dotnet run --project SafeLab.Platform/SafeLab.Platform.csproj
+```txt
+GET  /api/v1/dashboard/overview
+POST /api/v1/dashboard/refresh
 ```
 
-6. Open Swagger:
+### Sensor Monitoring
 
-```text
-http://localhost:8080/swagger
+```txt
+GET   /api/v1/sensor-monitoring/sensors
+POST  /api/v1/sensor-monitoring/sensors
+PATCH /api/v1/sensor-monitoring/sensors/{id}/reading
+POST  /api/v1/sensor-monitoring/sensors/{id}/disconnect
 ```
 
-7. Health check:
+Out-of-range sensor readings create related alerts, notifications and audit logs.
 
-```text
-http://localhost:8080/health
+### Alerts & Notifications
+
+```txt
+GET  /api/v1/alerts-notifications/alerts
+GET  /api/v1/alerts-notifications/notifications
+POST /api/v1/alerts-notifications/alerts/{id}/acknowledge
+POST /api/v1/alerts-notifications/alerts/{id}/resolve
+POST /api/v1/alerts-notifications/alerts/{id}/escalate
+POST /api/v1/alerts-notifications/notifications/{id}/mark-read
 ```
 
-## MySQL Configuration
+Escalating an alert creates an incident.
 
-The API creates the database schema automatically on startup using Entity Framework Core `EnsureCreated`. It also seeds data from:
+### Remote Control
 
-```text
-SafeLab.Platform/Data/seed-data.json
+```txt
+GET  /api/v1/remote-control/actuators
+GET  /api/v1/remote-control/commands
+POST /api/v1/remote-control/actuators/{id}/commands
 ```
 
-For this first backend version, the data is stored in a table named:
+Example command:
 
-```text
-stored_documents
+```json
+{
+  "command": "Start",
+  "requestedBy": "Dr. Maria Lopez"
+}
 ```
 
-This table contains the collection name, document id and JSON content for each SafeLab record. This keeps compatibility with the current Vue frontend while preparing the backend for a future fully relational model.
+### Incidents
 
-## Project Structure
-
-```text
-SafeLab.Platform/
-├── Iam/
-│   ├── Application/
-│   ├── Domain/
-│   ├── Infrastructure/
-│   └── Interfaces/
-├── UserProfiles/
-├── SubscriptionBilling/
-├── DashboardOverview/
-├── AssetInventoryMonitoring/
-├── SensorMonitoring/
-├── EnvironmentalCompliance/
-├── AlertsNotifications/
-├── RemoteControlActuation/
-├── ReportsAnalytics/
-├── IncidentManagement/
-├── AuditTraceability/
-├── Shared/
-│   ├── Domain/
-│   ├── Infrastructure/
-│   └── Interfaces/
-├── Data/
-│   └── seed-data.json
-├── Program.cs
-├── appsettings.json
-├── appsettings.Development.json
-└── SafeLab.Platform.csproj
+```txt
+GET  /api/v1/incident-management/incidents
+POST /api/v1/incident-management/incidents/{id}/start-investigation
+POST /api/v1/incident-management/incidents/{id}/resolve
+POST /api/v1/incident-management/incidents/{id}/close
 ```
 
-## API Documentation
+### Audit Trail
 
-Swagger is available at:
-
-```text
-http://localhost:8080/swagger
+```txt
+GET /api/v1/audit-traceability/logs
+GET /api/v1/audit-traceability/timeline
 ```
 
-Main endpoints:
+## Frontend connection
 
-```text
-POST /api/v1/authentication/sign-in
-POST /api/v1/authentication/sign-up
-GET  /api/v1/users
-GET  /api/v1/user-profiles
-GET  /api/v1/assets
-GET  /api/v1/sensors
-GET  /api/v1/alerts
-GET  /api/v1/notifications
-GET  /api/v1/remote-actuators
-GET  /api/v1/reports
-GET  /api/v1/historical-data
-GET  /api/v1/incidents
-GET  /api/v1/audit-traceability
-GET  /api/v1/subscriptions
-GET  /api/v1/billing-plans
+After the backend is deployed, set this in Vercel for the frontend:
+
+```txt
+VITE_API_BASE_URL=https://YOUR_RENDER_BACKEND_URL/api/v1
 ```
 
-Compatibility endpoints for the current frontend:
-
-```text
-GET /users
-GET /userProfiles
-GET /assets
-GET /sensors
-GET /alerts
-GET /incidents
-GET /reports
-```
-
-## Deployment on Render
-
-This repository includes a `Dockerfile` and `render.yaml`.
-
-On Render, create a new Web Service from this repository and set the following environment variable:
-
-```text
-MYSQL_CONNECTION_STRING=server=<host>;port=<port>;user=<user>;password=<password>;database=<database>
-```
-
-Render will build the Docker image and expose the API. Swagger will be available at:
-
-```text
-https://your-render-service.onrender.com/swagger
-```
-
-## Frontend Integration
-
-After deploying the backend, configure the frontend environment variable in Vercel:
-
-```text
-VITE_API_BASE_URL=https://your-render-service.onrender.com
-```
-
-Then redeploy the frontend.
-
-## Demo Credentials
-
-```text
-admin@safelab.com / admin123
-coordinator@safelab.com / demo123
-pharmacy.coordinator@safelab.com / demo123
-lab.tech1@safelab.com / demo123
-maintenance@safelab.com / demo123
-billing@safelab.com / demo123
-```
-
-## Documentation
-
-Additional documentation is located in the `docs/` folder:
-
-- `docs/class-diagram.puml`
-- `docs/software-architecture.dsl`
-- `docs/user-stories.md`
-
-## License
-
-This project is licensed under the MIT License.
+Then the frontend can stop using only localStorage/demo state and start consuming the deployed API.

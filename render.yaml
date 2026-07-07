@@ -1,12 +1,17 @@
 services:
   - type: web
     name: safelab-platform-api
-    env: docker
+    runtime: docker
     plan: free
-    dockerfilePath: ./Dockerfile
-    autoDeploy: true
+    region: oregon
+    healthCheckPath: /actuator/health
     envVars:
-      - key: ASPNETCORE_ENVIRONMENT
-        value: Production
-      - key: MYSQL_CONNECTION_STRING
-        sync: false
+      - key: SPRING_PROFILES_ACTIVE
+        value: postgres
+      - key: CORS_ALLOWED_ORIGINS
+        value: https://safelab-frontend.vercel.app,http://localhost:5173
+      - key: SEED_RESET_ON_START
+        value: false
+      - key: JAVA_OPTS
+        value: -XX:MaxRAMPercentage=75.0
+      # Add DATABASE_URL manually from your Render PostgreSQL Internal Database URL.

@@ -1,0 +1,14 @@
+services:
+  mysql:
+    image: mysql:8.4
+    container_name: safelab-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: safelab_db
+      MYSQL_ROOT_PASSWORD: 12345Mysql$
+    ports:
+      - "3306:3306"
+    volumes:
+      - safelab_mysql_data:/var/lib/mysql
+volumes:
+  safelab_mysql_data:

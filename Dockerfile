@@ -1,14 +1,13 @@
-FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
-WORKDIR /src
-COPY SafeLab.Platform/SafeLab.Platform.csproj SafeLab.Platform/
-RUN dotnet restore SafeLab.Platform/SafeLab.Platform.csproj
-COPY . .
-RUN dotnet publish SafeLab.Platform/SafeLab.Platform.csproj -c Release -o /app/publish
-
-FROM mcr.microsoft.com/dotnet/aspnet:10.0 AS final
+FROM maven:3.9.9-eclipse-temurin-21 AS build
 WORKDIR /app
-COPY --from=build /app/publish .
-ENV ASPNETCORE_ENVIRONMENT=Production
-ENV ASPNETCORE_URLS=http://+:8080
+COPY pom.xml .
+RUN mvn -q -DskipTests dependency:go-offline
+COPY src ./src
+RUN mvn -q -DskipTests clean package
+
+FROM eclipse-temurin:21-jre-jammy
+WORKDIR /app
+ENV JAVA_OPTS=""
+COPY --from=build /app/target/safelab-platform-api-*.jar app.jar
 EXPOSE 8080
-ENTRYPOINT ["dotnet", "SafeLab.Platform.dll"]
+CMD ["sh", "-c", "java $JAVA_OPTS -jar app.jar"]
